@@ -164,11 +164,11 @@ module core {
                 RES.destroyRes("cfgs");
                 delete this.parsers;
                 delete this._plist;
-                mvc.Facade.simpleDispatch(lingyu.EventConst.DATA_LOCATOR);
+                mvc.Facade.simpleDispatch(core.EventConst.DATA_LOCATOR);
                 Global.setDataParsed();
                 //szc
-                let webServer = new lingyu.WSNetService
-                new chuanqi.PreRegiest();
+                let webServer = new core.WSNetService
+                new game.PreRegiest();
             }
         }
 

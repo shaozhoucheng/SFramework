@@ -33,7 +33,7 @@ module core.game {
 
         private onReshowLoader(evt: egret.Event) {
             if (!this.reLoaded) {
-                this.loadUI.visible = true;
+                // this.loadUI.visible = true;
             }
         }
 
@@ -49,32 +49,21 @@ module core.game {
             mm.setCfgs(cfgs);
             mm.registerHandler(0, new ModuleHandler0());
             if (this._dataFlag && this._loadFlag) {
-                let param = egret["baseParams"];
-                let flag = param["random"];
-                if (flag) {
-                    let server = Core.serverVO
-                    if (server) {
-                        egret["server"] = {
-                            ip: server.externalIp,
-                            port: server.tcpPort
-                        }
-                    }
-                    new PreConnect();
-                } else{
-                    let base = egret["baseParams"];
-                    let newFlag = base["newPlayer"];
-                    if(newFlag){
-                        let server = Core.serverVO
-                        if (server) {
-                            egret["server"] = {
-                                ip: server.externalIp,
-                                port: server.tcpPort
-                            }
-                        }
-                        new PreConnect();
-                    }else{
-                         $facade.toggle(ModuleId.Servers);//打开选服页面
-                    }
+               
+                let base = egret["baseParams"];
+                let newFlag = base["newPlayer"];
+                if(newFlag){
+                    //szc
+                    // let server = Core.serverVO
+                    // if (server) {
+                    //     egret["server"] = {
+                    //         ip: server.externalIp,
+                    //         port: server.tcpPort
+                    //     }
+                    // }
+                    // new PreConnect();
+                }else{
+                    $facade.toggle(ModuleId.Servers);//打开选服页面
                 }
             }
         }
@@ -89,7 +78,7 @@ module core.game {
             mm.checkers = checks;
         }
 
-        private loadUI: MainLoadUI;
+        // private loadUI: MainLoadUI;
 
         private defaultTime: number;
 
@@ -99,16 +88,11 @@ module core.game {
             if (DEBUG) {
                 RES.loadConfig("resource/default.res.json", "resource/");
             } else {
-                RES.loadConfig(Core.domain + "/resource/default.res.json" + "?v=" + Math.random(), Core.domain + "/resource/", RES.ResourceItem.TYPE_JSON);
+                // RES.loadConfig(Core.domain + "/resource/default.res.json" + "?v=" + Math.random(), Core.domain + "/resource/", RES.ResourceItem.TYPE_JSON);
             }
         }
 
-        private preloadTime: number;
-
         private onConfigComplete(event: RES.ResourceEvent): void {
-            let time = Date.now() - this.defaultTime;
-            $reportResourceDownload(resourceReport.Default, time);
-            $reportGameStep(gameReport.BASE_CONFIG_LOADED);
             let base = egret["baseParams"];
             let newFlag = base["newPlayer"];
             let key;
@@ -118,7 +102,6 @@ module core.game {
                 key = "preload";
             }
             // key = "preload";
-            this.preloadTime = Date.now();
             RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
             RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
             RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
@@ -162,19 +145,15 @@ module core.game {
 	   * Preload resource group is loaded
 	   */
         private onResourceLoadComplete(event: RES.ResourceEvent): void {
-            let file = event.groupName == "preload" ? resourceReport.Preload : resourceReport.Preload2;
-            let time = Date.now() - this.preloadTime;
-            $reportResourceDownload(file, time);
 
             let base = egret["baseParams"];
             let newPlayer = base["newPlayer"];
             if (!newPlayer) {
-                removeDisplay(this.loadUI);
+                // removeDisplay(this.loadUI);
             } else {
-                this.loadUI.visible = false;
+                // this.loadUI.visible = false;
             }
 
-            $reportGameStep(gameReport.GAME_CONFIG_LOADED);
             let now = Date.now();
 
             // if (event.groupName == "preload") {
@@ -189,21 +168,21 @@ module core.game {
             RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
 
             //前期事件管理器（启动游戏后，不建议使用)
-            FacadeInterest.getInstance().start();
+            // FacadeInterest.getInstance().start();
             //解析配置数据
             let gameRes = RES.getRes("game");
             game.initData();
-            lingyu.ConfigUtils.setData(gameRes);
+            core.ConfigUtils.setData(gameRes);
             var ConfigKey = game.ConfigKey;
-            NameUtils.loadNameLib(gameRes.params.nameLib);
-            WordFilter.loadDirtyWord(gameRes.params.dirty);
-            LangUtil.loadCode(gameRes.params.code);
-            DataLocator.regParser(ConfigKey.MAP, MapConfigParser);
-            DataLocator.regParser(ConfigKey.PST, PstConfigParser);
-            DataLocator.regParser(ConfigKey.ANI, AniConfigParser);
-            ResourceManager.init();
+            // NameUtils.loadNameLib(gameRes.params.nameLib);
+            // WordFilter.loadDirtyWord(gameRes.params.dirty);
+            // LangUtil.loadCode(gameRes.params.code);
+            // DataLocator.regParser(ConfigKey.MAP, MapConfigParser);
+            // DataLocator.regParser(ConfigKey.PST, PstConfigParser);
+            // DataLocator.regParser(ConfigKey.ANI, AniConfigParser);
+            // ResourceManager.init();
            
-            sui.SuiResManager.getInstance().setInlineData("lib", RES.getRes("s_libs"));
+            // sui.SuiResManager.getInstance().setInlineData("lib", RES.getRes("s_libs"));
             if (!newPlayer) {
                 //配置cfgs
                 DataLocator.parsePakedDatas();
@@ -223,7 +202,7 @@ module core.game {
         private onResourceLoadComplete2(event: RES.ResourceEvent): void {
             this.reLoaded = true;
             DataLocator.parsePakedDatas();
-            removeDisplay(this.loadUI);
+            // removeDisplay(this.loadUI);
         }
 
         private _dataFlag: boolean = false;

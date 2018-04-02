@@ -1,10 +1,10 @@
-module lingyu.sui {
+module core.sui {
 	/**
 	 * 模块面板
 	 * @author builder
 	 *
 	 */
-    export abstract class Panel extends TStatePanel implements ISuiDataCallback, mvc.IAsyncPanel {
+    export abstract class Panel extends TStatePanel implements  mvc.IAsyncPanel {
 
         public layoutType: number;
         /**
@@ -75,9 +75,7 @@ module lingyu.sui {
             this._baseRect.width = w;
             this._baseRect.height = h;
         }
-        /**
-         * 自己的key(fla的文件名)
-         */
+        
         protected _key: string;
         /**
          * 依赖的除lib,自己以外的其他fla
@@ -174,22 +172,22 @@ module lingyu.sui {
         protected loadNext() {
             if (this._depends.length) {
                 var key = this._depends.pop();
-                var suiManager = SuiResManager.getInstance();
-                suiManager.loadData(key, this);
+                // var suiManager = SuiResManager.getInstance();
+                // suiManager.loadData(key, this);
             }
             else {
                 this.skinDataComplete();
             }
         }
 
-        public suiDataComplete(suiData: SuiData): void {
-            this.loadNext();
-        }
+        // public suiDataComplete(suiData: SuiData): void {
+        //     this.loadNext();
+        // }
 
-        public suiDataFailed(suiData: SuiData): void {
-            //暂时用alert
-            alert(this._className + "加载失败");
-        }
+        // public suiDataFailed(suiData: SuiData): void {
+        //     //暂时用alert
+        //     alert(this._className + "加载失败");
+        // }
 
 		/**
 		 * 绑定皮肤

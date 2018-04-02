@@ -4,7 +4,7 @@ module core.mvc {
 	 * @author 
 	 *
 	 */
-	export interface IModulePanel extends eui.Component {
+	export interface IModulePanel extends egret.DisplayObject{
     	
     	 /**
     	  * 关联的模块ID
