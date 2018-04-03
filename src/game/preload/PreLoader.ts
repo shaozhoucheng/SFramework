@@ -3,6 +3,7 @@ module core.game {
         public constructor() {
             // this.loadUI = new MainLoadUI();
             // this.loadUI.showLoadUI(this.initRES, this);
+            this.initRES();
             mvc.Facade.on(EventConst.DATA_LOCATOR, this.dataParsed, this);
             //szc 屏蔽
             return;
@@ -48,24 +49,25 @@ module core.game {
             let cfgs = DataLocator.getData(game.ConfigKey.GongNeng);
             mm.setCfgs(cfgs);
             mm.registerHandler(0, new ModuleHandler0());
-            if (this._dataFlag && this._loadFlag) {
+            Core.stage.addChild(new ServerMainPanel());
+            // if (this._dataFlag && this._loadFlag) {
                
-                let base = egret["baseParams"];
-                let newFlag = base["newPlayer"];
-                if(newFlag){
-                    //szc
-                    // let server = Core.serverVO
-                    // if (server) {
-                    //     egret["server"] = {
-                    //         ip: server.externalIp,
-                    //         port: server.tcpPort
-                    //     }
-                    // }
-                    // new PreConnect();
-                }else{
-                    $facade.toggle(ModuleId.Servers);//打开选服页面
-                }
-            }
+            //     let base = egret["baseParams"];
+            //     let newFlag = base["newPlayer"];
+            //     if(newFlag){
+            //         //szc
+            //         // let server = Core.serverVO
+            //         // if (server) {
+            //         //     egret["server"] = {
+            //         //         ip: server.externalIp,
+            //         //         port: server.tcpPort
+            //         //     }
+            //         // }
+            //         // new PreConnect();
+            //     }else{
+            //         $facade.toggle(ModuleId.Servers);//打开选服页面
+            //     }
+            // }
         }
 
 
@@ -93,21 +95,21 @@ module core.game {
         }
 
         private onConfigComplete(event: RES.ResourceEvent): void {
-            let base = egret["baseParams"];
-            let newFlag = base["newPlayer"];
-            let key;
-            if (newFlag) {
-                key = "preload2";
-            } else {
-                key = "preload";
-            }
+            // let base = egret["baseParams"];
+            // let newFlag = base["newPlayer"];
+            // let key;
+            // if (newFlag) {
+            //     key = "preload2";
+            // } else {
+            //     key = "preload";
+            // }
             // key = "preload";
             RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
             RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
             RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
             RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
             RES.addEventListener(RES.ResourceEvent.ITEM_LOAD_ERROR, this.onItemLoadError, this);
-            RES.loadGroup(key);
+            RES.loadGroup("preload");
         }
 
 
@@ -146,15 +148,15 @@ module core.game {
 	   */
         private onResourceLoadComplete(event: RES.ResourceEvent): void {
 
-            let base = egret["baseParams"];
-            let newPlayer = base["newPlayer"];
-            if (!newPlayer) {
-                // removeDisplay(this.loadUI);
-            } else {
-                // this.loadUI.visible = false;
-            }
+            // let base = egret["baseParams"];
+            // let newPlayer = base["newPlayer"];
+            // if (!newPlayer) {
+            //     // removeDisplay(this.loadUI);
+            // } else {
+            //     // this.loadUI.visible = false;
+            // }
 
-            let now = Date.now();
+            // let now = Date.now();
 
             // if (event.groupName == "preload") {
 
@@ -183,15 +185,15 @@ module core.game {
             // ResourceManager.init();
            
             // sui.SuiResManager.getInstance().setInlineData("lib", RES.getRes("s_libs"));
-            if (!newPlayer) {
+            // if (!newPlayer) {
                 //配置cfgs
                 DataLocator.parsePakedDatas();
-            } else {
-                //配置数据特殊处理
-                DataLocator.parseRegiest();
-                this._dataFlag = true;
-                this.startLoading();
-            }
+            // } else {
+            //     //配置数据特殊处理
+            //     DataLocator.parseRegiest();
+            //     this._dataFlag = true;
+            //     this.startLoading();
+            // }
         }
 
         private reLoaded: boolean = false;

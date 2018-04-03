@@ -1,0 +1,7 @@
+{
+	"autoGenerateExmlsList": true,
+	"exmls": [
+		"resource/ui/panel/ServerMainPanel.exml"
+	],
+	"path": "resource/default.thm.json"
+}

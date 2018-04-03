@@ -321,7 +321,7 @@ module core.game {
 	}
 	export function initData() {
 		var C = ConfigKey;
-		var P = lingyu.chuanqi;
+		/*var P = lingyu.chuanqi;
 		rP(C.JiNengMoBan, P.JiNengMoBanCfg);
 		rP(C.JueSe, P.JueSeCfg, "level");
 		rP(C.JueSeWaiXian, P.JueSeWaiXianCfg);
@@ -469,6 +469,6 @@ module core.game {
 		rP(C.ChengZhu, P.ChengZhuCfg);
 
 		rE(C.JueSeWaiXian);
-		rE(C.daoju);
+		rE(C.daoju);*/
 	}
 }

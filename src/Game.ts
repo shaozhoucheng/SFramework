@@ -14,11 +14,11 @@ export class Game extends egret.DisplayObjectContainer {
             // stage.dirtyRegionPolicy = "off";
             // ResizeManager.getInstance().init(stage);
             $facade = new mvc.Facade();
-            // Core.stage = stage;
+            Core.stage = stage;
             // sui.Panel.WIDTH = stage.stageWidth;
             // sui.Panel.HEIGHT = stage.stageHeight;
 
-            // game.GameEngine.init(stage);
+            game.GameEngine.init(stage);
             // let engine = game.GameEngine.instance;
             // let camera = new game.Camera();
             // engine.camera = camera;

@@ -61,6 +61,48 @@ module core {
 
 }
 
+/****************************************扩展Math****************************************/
+interface Math {
+    /**
+     * 让数值处于指定的最大值和最小值之间，低于最小值取最小值，高于最大值取最大值
+     * @param value 要处理的数值
+     * @param min   最小值
+     * @param max   最大值
+     */
+    clamp(value: number, min: number, max: number): number;
+
+    /**
+     * 从最小值到最大值之间随机[min,max)
+     */
+    random2(min: number, max: number): number;
+
+    /**
+     * 角度转弧度的乘数
+     */
+    RAD_TO_DEG: number;
+    /**
+     * 整圆的弧度
+     */
+    PI2: number;
+}
+Math.RAD_TO_DEG = 180 / Math.PI;
+
+Math.PI2 = 2 * Math.PI;
+
+Math.clamp = (value, min, max) => {
+    if (value < min) {
+        value = min;
+    }
+    if (value > max) {
+        value = max;
+    }
+    return value;
+}
+
+Math.random2 = (min, max) => {
+    return min + Math.random() * (max - min);
+}
+
 /****************************************扩展String****************************************/
 interface String {
     /**

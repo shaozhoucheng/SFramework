@@ -27,38 +27,16 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////
 
-class Main_bak extends egret.DisplayObjectContainer {
+class Main extends core.game.Game {
 
 
 
     public constructor() {
         super();
-        this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
+        // this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
     }
 
-    private onAddToStage(event: egret.Event) {
 
-        egret.lifecycle.addLifecycleListener((context) => {
-            // custom lifecycle plugin
-
-            context.onUpdate = () => {
-
-            }
-        })
-
-        egret.lifecycle.onPause = () => {
-            egret.ticker.pause();
-        }
-
-        egret.lifecycle.onResume = () => {
-            egret.ticker.resume();
-        }
-
-
-
-    }
-
-   
 
     private textfield: egret.TextField;
 
