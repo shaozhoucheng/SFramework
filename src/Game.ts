@@ -48,7 +48,7 @@ export class Game extends egret.DisplayObjectContainer {
             
             let stage = this.stage;
             // stage.dirtyRegionPolicy = "off";
-            // ResizeManager.getInstance().init(stage);
+            ResizeManager.getInstance().init(stage);
             $facade = new mvc.Facade();
             $facade.registerInlineMediator(ServerMainPanelMediator, ModuleId.Servers);
             Core.stage = stage;
