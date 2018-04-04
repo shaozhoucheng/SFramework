@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,test_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,test_png,cfgs_json",
 			"name": "preload"
 		}
 	],
@@ -25,6 +25,11 @@
 			"url": "assets/test/test.png",
 			"type": "image",
 			"name": "test_png"
+		},
+		{
+			"name": "cfgs_json",
+			"type": "json",
+			"url": "data/cfgs.json"
 		}
 	]
 }

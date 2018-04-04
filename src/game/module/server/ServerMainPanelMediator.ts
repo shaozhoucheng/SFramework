@@ -9,5 +9,8 @@ module core.game {
 			// ResizeManager.getInstance().add(this.view, sui.LayoutType.MIDDLE_CENTER);
 			//这里加事件关注
 		}
+
+		
+		
     }
 }

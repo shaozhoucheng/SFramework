@@ -3,8 +3,9 @@ module core.game {
         public constructor() {
             // this.loadUI = new MainLoadUI();
             // this.loadUI.showLoadUI(this.initRES, this);
-            this.initRES();
+            // this.initRES();
             mvc.Facade.on(EventConst.DATA_LOCATOR, this.dataParsed, this);
+            this.onResourceLoadComplete();
             //szc 屏蔽
             return;
             let base = egret["baseParams"];
@@ -49,25 +50,10 @@ module core.game {
             let cfgs = DataLocator.getData(game.ConfigKey.GongNeng);
             mm.setCfgs(cfgs);
             mm.registerHandler(0, new ModuleHandler0());
-            Core.stage.addChild(new ServerMainPanel());
-            // if (this._dataFlag && this._loadFlag) {
-               
-            //     let base = egret["baseParams"];
-            //     let newFlag = base["newPlayer"];
-            //     if(newFlag){
-            //         //szc
-            //         // let server = Core.serverVO
-            //         // if (server) {
-            //         //     egret["server"] = {
-            //         //         ip: server.externalIp,
-            //         //         port: server.tcpPort
-            //         //     }
-            //         // }
-            //         // new PreConnect();
-            //     }else{
-            //         $facade.toggle(ModuleId.Servers);//打开选服页面
-            //     }
-            // }
+            // Core.stage.addChild(new ServerMainPanel());
+            if (this._dataFlag && this._loadFlag) {
+                $facade.toggle(ModuleId.Servers);//打开选服页面
+            }
         }
 
 
@@ -146,7 +132,7 @@ module core.game {
 	   * preload资源组加载完成
 	   * Preload resource group is loaded
 	   */
-        private onResourceLoadComplete(event: RES.ResourceEvent): void {
+        private onResourceLoadComplete(event?: RES.ResourceEvent): void {
 
             // let base = egret["baseParams"];
             // let newPlayer = base["newPlayer"];

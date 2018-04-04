@@ -145,7 +145,7 @@ module core {
                 this._cost = 0;
             }
             var parsers = this.parsers;
-            let configs = RES.getRes("cfgs");
+            let configs = RES.getRes("cfgs_json");
             if (this._plist && this._plist.length) {
                 let now = Date.now();
                 let key = this._plist.shift();
@@ -161,7 +161,7 @@ module core {
                 this.onParse();
             } else {
                 egret.sys.$TempStage.off(egret.Event.ENTER_FRAME, this.onParse, this);
-                RES.destroyRes("cfgs");
+                RES.destroyRes("cfgs_json");
                 delete this.parsers;
                 delete this._plist;
                 mvc.Facade.simpleDispatch(core.EventConst.DATA_LOCATOR);

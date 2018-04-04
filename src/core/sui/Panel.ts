@@ -13,14 +13,14 @@ module core.sui {
          * @static
          * @type {number}
          */
-        public static WIDTH: number = 720;
+        // public static WIDTH: number = 720;
         /**
          * 面板高度
          * 
          * @static
          * @type {number}
          */
-        public static HEIGHT: number = 1280;
+        // public static HEIGHT: number = 1280;
         /**
          * 模态颜色
          * 
@@ -58,29 +58,19 @@ module core.sui {
          * @protected
          * @type {egret.Rectangle}
          */
-        protected _baseRect: egret.Rectangle;
-        /**
-         * 
-         * 面板在fla中的原始坐标
-         * @readonly
-         * 
-         * @memberOf Panel
-         */
-        public get baseRect() {
-            return this._baseRect;
-        }
+        // protected _baseRect: egret.Rectangle;
 
         /**修改界面大小 */
         public resizeBaseRect(w: number, h: number) {
-            this._baseRect.width = w;
-            this._baseRect.height = h;
+            // this._baseRect.width = w;
+            // this._baseRect.height = h;
         }
         
         protected _key: string;
         /**
          * 依赖的除lib,自己以外的其他fla
          */
-        protected _otherDepends: string[];
+        // protected _otherDepends: string[];
         protected _className: string;
         /**
          * 所有依赖的fla资源
@@ -88,7 +78,7 @@ module core.sui {
          * @protected
          * @type {string[]}
          */
-        protected _depends: string[];
+        // protected _depends: string[];
 
         protected _ready: boolean;
         /**
@@ -142,19 +132,11 @@ module core.sui {
         }
 
         protected init() {
-            //this._key=xxxx
-            //this._className=xxxx
-            //this._otherDepends=[other...];
         }
 
         public startSync() {
-            if (this._otherDepends) {
-                this._depends = this._otherDepends.concat();
-            } else {
-                this._depends = [];
-            }
-            this._depends.push(this._key);
-            this.loadNext();
+            //目前没搞清egret component 加载这块 直接ready
+            this.skinDataComplete();
         }
 
         doScale(scale: number) {
@@ -170,14 +152,14 @@ module core.sui {
         }
 
         protected loadNext() {
-            if (this._depends.length) {
-                var key = this._depends.pop();
-                // var suiManager = SuiResManager.getInstance();
-                // suiManager.loadData(key, this);
-            }
-            else {
-                this.skinDataComplete();
-            }
+            // if (this._depends.length) {
+            //     var key = this._depends.pop();
+            //     // var suiManager = SuiResManager.getInstance();
+            //     // suiManager.loadData(key, this);
+            // }
+            // else {
+            //     this.skinDataComplete();
+            // }
         }
 
         // public suiDataComplete(suiData: SuiData): void {
@@ -193,6 +175,12 @@ module core.sui {
 		 * 绑定皮肤
 		 */
         protected abstract bindComponents();
+
+        // protected createChildren()
+        // {
+        //     super.createChildren();
+        //     this.skinDataComplete();
+        // }
 
 		/**
 		 * 皮肤数据加载完成
@@ -275,14 +263,14 @@ module core.sui {
             // if(this.modal){
             //     return Panel.WIDTH;
             // }
-            return this._baseRect.width;
+            return this.skin.width;
         }
 
         public get height(): number {
             // if(this.modal){
             //     return Panel.HEIGHT;
             // }
-            return this._baseRect.height;
+            return this.skin.height;
         }
 
         /**

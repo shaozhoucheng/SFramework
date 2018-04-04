@@ -321,11 +321,11 @@ module core.game {
 	}
 	export function initData() {
 		var C = ConfigKey;
-		/*var P = lingyu.chuanqi;
-		rP(C.JiNengMoBan, P.JiNengMoBanCfg);
+		var P = core.game;
+		rP(C.GongNeng, P.GongNengCfg);
+		/*rP(C.JiNengMoBan, P.JiNengMoBanCfg);
 		rP(C.JueSe, P.JueSeCfg, "level");
 		rP(C.JueSeWaiXian, P.JueSeWaiXianCfg);
-		rP(C.GongNeng, P.GongNengCfg);
 		rP(C.daoju, P.daojuCfg);
 		rP(C.zhuangbeibiao, P.zhuangbeibiaoCfg);
 		rP(C.ZhuangBeiPinZhi, P.ZhuangBeiPinZhiCfg, "rare");
