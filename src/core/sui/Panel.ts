@@ -4,7 +4,7 @@ module core.sui {
 	 * @author builder
 	 *
 	 */
-    export abstract class Panel extends TStatePanel implements  mvc.IAsyncPanel {
+    export abstract class Panel extends TStatePanel implements mvc.IAsyncPanel {
 
         public layoutType: number;
         /**
@@ -65,7 +65,7 @@ module core.sui {
             // this._baseRect.width = w;
             // this._baseRect.height = h;
         }
-        
+
         protected _key: string;
         /**
          * 依赖的除lib,自己以外的其他fla
@@ -134,17 +134,21 @@ module core.sui {
         protected init() {
         }
 
+        private isStart: boolean = false;
+
         public startSync() {
-            RES.loadGroup(this._key);//加载资源组对应的图片
-            RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.skinDataComplete,this);
+            if (!this.isStart) {
+                this.isStart = true
+                RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.skinDataComplete, this);
+                RES.loadGroup(this._key);//加载资源组对应的图片
+            }
             //目前没搞清egret component 加载这块 直接ready
-           
+
             // this.skinDataComplete();
         }
 
-        private skinDataComplete()
-        {
-            RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.skinDataComplete,this);
+        private skinDataComplete(e: any) {
+            RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.skinDataComplete, this);
             EXML.load(this.skinName, this.exmlDataComplete, this)
         }
 
@@ -278,7 +282,7 @@ module core.sui {
          * 
          * @protected
          */
-        protected addModal(flag: boolean = true,active: boolean = true) {
+        protected addModal(flag: boolean = true, active: boolean = true) {
             if (!this.modal) {
                 this.modal = new egret.Shape();
             }

@@ -31,12 +31,6 @@
 			"type": "sheet",
 			"name": "common",
 			"subkeys": "btn_no,btn_quicksend,btn_yes"
-		},
-		{
-			"url": "ui/skin/Login/login.json",
-			"type": "sheet",
-			"name": "login",
-			"subkeys": "ad_bg,btn_log,btn_reg,idcard,log_bg,newAccount,pwd,pwd1,pwd2,realname,title_log_1,title_log_2,title_reg_1,title_reg_2"
 		}
 	]
 }
