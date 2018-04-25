@@ -13,15 +13,15 @@ module core.game {
         /**
          * 角色动作数据
          */
-        PST: string;
+        // PST: string;
         /**
          * 特效数据
          */
-        ANI: string;
+        // ANI: string;
         /**
          * 地图数据
          */
-        MAP: string;
+        // MAP: string;
     }
 
     /**

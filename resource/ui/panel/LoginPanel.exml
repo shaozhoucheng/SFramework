@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="760" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="175.5" y="203" source="login.ad_bg"/>
+	<e:Image source="login.log_bg" x="182.85" y="203"/>
+	<e:ToggleButton id="tab_regist" label="" x="220.67" y="238.67">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="login.title_reg_1" source.down="login.title_reg_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+	<e:ToggleButton id="tab_login" label="" x="404" y="238.67" name="tab_login">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="login.title_log_1" source.down="login.title_log_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+</e:Skin>

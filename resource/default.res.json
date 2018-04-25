@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,test_png,cfgs_json",
+			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common",
 			"name": "preload"
 		}
 	],
@@ -22,14 +22,21 @@
 			"name": "description_json"
 		},
 		{
-			"url": "assets/test/test.png",
-			"type": "image",
-			"name": "test_png"
+			"url": "remote/data/cfgs.json",
+			"type": "json",
+			"name": "cfgs"
 		},
 		{
-			"name": "cfgs_json",
-			"type": "json",
-			"url": "data/cfgs.json"
+			"url": "ui/skin/Common/common.json",
+			"type": "sheet",
+			"name": "common",
+			"subkeys": "btn_no,btn_quicksend,btn_yes"
+		},
+		{
+			"url": "ui/skin/Login/login.json",
+			"type": "sheet",
+			"name": "login",
+			"subkeys": "ad_bg,btn_log,btn_reg,idcard,log_bg,newAccount,pwd,pwd1,pwd2,realname,title_log_1,title_log_2,title_reg_1,title_reg_2"
 		}
 	]
 }

@@ -135,8 +135,17 @@ module core.sui {
         }
 
         public startSync() {
+            RES.loadGroup(this._key);//加载资源组对应的图片
+            RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.skinDataComplete,this);
             //目前没搞清egret component 加载这块 直接ready
-            this.skinDataComplete();
+           
+            // this.skinDataComplete();
+        }
+
+        private skinDataComplete()
+        {
+            RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.skinDataComplete,this);
+            EXML.load(this.skinName, this.exmlDataComplete, this)
         }
 
         doScale(scale: number) {
@@ -162,15 +171,6 @@ module core.sui {
             // }
         }
 
-        // public suiDataComplete(suiData: SuiData): void {
-        //     this.loadNext();
-        // }
-
-        // public suiDataFailed(suiData: SuiData): void {
-        //     //暂时用alert
-        //     alert(this._className + "加载失败");
-        // }
-
 		/**
 		 * 绑定皮肤
 		 */
@@ -185,7 +185,7 @@ module core.sui {
 		/**
 		 * 皮肤数据加载完成
 		 */
-        protected skinDataComplete() {
+        protected exmlDataComplete() {
             this.bindComponents();
             if (this["bg"]) {
                 this["bg"].touchEnabled = true;

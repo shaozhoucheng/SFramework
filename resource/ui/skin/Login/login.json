@@ -1,0 +1,15 @@
+{"file":"login.png","frames":{
+"pwd2":{"x":80,"y":491,"w":77,"h":19,"offX":0,"offY":0,"sourceW":77,"sourceH":19},
+"realname":{"x":159,"y":491,"w":76,"h":19,"offX":0,"offY":0,"sourceW":77,"sourceH":19},
+"title_log_1":{"x":143,"y":448,"w":140,"h":41,"offX":0,"offY":0,"sourceW":140,"sourceH":41},
+"title_log_2":{"x":1,"y":448,"w":140,"h":41,"offX":0,"offY":0,"sourceW":140,"sourceH":41},
+"title_reg_1":{"x":224,"y":404,"w":140,"h":40,"offX":0,"offY":0,"sourceW":140,"sourceH":40},
+"title_reg_2":{"x":224,"y":362,"w":140,"h":40,"offX":0,"offY":0,"sourceW":140,"sourceH":40},
+"ad_bg":{"x":1,"y":1,"w":409,"h":359,"offX":0,"offY":0,"sourceW":409,"sourceH":359},
+"btn_log":{"x":1,"y":362,"w":221,"h":41,"offX":0,"offY":0,"sourceW":221,"sourceH":41},
+"btn_reg":{"x":1,"y":405,"w":221,"h":41,"offX":0,"offY":0,"sourceW":221,"sourceH":41},
+"idcard":{"x":285,"y":446,"w":58,"h":19,"offX":19,"offY":0,"sourceW":77,"sourceH":19},
+"log_bg":{"x":412,"y":1,"w":395,"h":359,"offX":0,"offY":0,"sourceW":395,"sourceH":359},
+"newAccount":{"x":237,"y":491,"w":76,"h":19,"offX":0,"offY":0,"sourceW":77,"sourceH":19},
+"pwd":{"x":315,"y":467,"w":44,"h":23,"offX":30,"offY":0,"sourceW":74,"sourceH":23},
+"pwd1":{"x":1,"y":491,"w":77,"h":19,"offX":0,"offY":0,"sourceW":77,"sourceH":19}}}

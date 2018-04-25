@@ -1,0 +1,4 @@
+{"file":"common.png","frames":{
+"btn_no":{"x":1,"y":36,"w":85,"h":33,"offX":0,"offY":0,"sourceW":85,"sourceH":33},
+"btn_quicksend":{"x":1,"y":71,"w":84,"h":33,"offX":0,"offY":0,"sourceW":84,"sourceH":33},
+"btn_yes":{"x":1,"y":1,"w":102,"h":33,"offX":0,"offY":0,"sourceW":102,"sourceH":33}}}

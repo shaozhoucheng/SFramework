@@ -52,7 +52,7 @@ module core.game {
             mm.registerHandler(0, new ModuleHandler0());
             // Core.stage.addChild(new ServerMainPanel());
             if (this._dataFlag && this._loadFlag) {
-                $facade.toggle(ModuleId.Servers);//打开选服页面
+                $facade.toggle(ModuleId.Login);//打开选服页面
             }
         }
 

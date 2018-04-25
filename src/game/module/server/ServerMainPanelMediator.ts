@@ -4,6 +4,7 @@ module core.game {
 			super(ModuleId.Servers);
 		}
 
+		public $view: ServerMainPanel;
         protected init() {
 			this.view = new ServerMainPanel;
 			ResizeManager.getInstance().add(this.view, sui.LayoutType.MIDDLE_CENTER);
@@ -12,7 +13,7 @@ module core.game {
 
 		public awake()
 		{
-
+			let view = this.$view;
 		}
 
 

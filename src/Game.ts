@@ -36,10 +36,10 @@ export class Game extends egret.DisplayObjectContainer {
         private async runGame() {
             await this.loadResource()
             this.createGameScene();
-            const result = await RES.getResAsync("description_json",null,this)
-            await platform.login();
-            const userInfo = await platform.getUserInfo();
-            console.log(userInfo);
+            // const result = await RES.getResAsync("description_json",null,this)
+            // await platform.login();
+            // const userInfo = await platform.getUserInfo();
+            // console.log(userInfo);
 
         }
 
@@ -50,7 +50,8 @@ export class Game extends egret.DisplayObjectContainer {
             // stage.dirtyRegionPolicy = "off";
             ResizeManager.getInstance().init(stage);
             $facade = new mvc.Facade();
-            $facade.registerInlineMediator(ServerMainPanelMediator, ModuleId.Servers);
+            // $facade.registerInlineMediator(ServerMainPanelMediator, ModuleId.Servers);
+            $facade.registerInlineMediator(LoginPanelMediator, ModuleId.Login);
             Core.stage = stage;
             // sui.Panel.WIDTH = stage.stageWidth;
             // sui.Panel.HEIGHT = stage.stageHeight;
@@ -79,6 +80,7 @@ export class Game extends egret.DisplayObjectContainer {
                 // const loadingView = new LoadingUI();
                 // this.stage.addChild(loadingView);
                 await RES.loadConfig("resource/default.res.json", "resource/");
+                await RES.loadConfig("resource/resource_ui.json", "resource/");
                 await this.loadTheme();
                 await RES.loadGroup("preload");
                 // this.stage.removeChild(loadingView);
@@ -97,35 +99,6 @@ export class Game extends egret.DisplayObjectContainer {
                     resolve();
                 }, this);
             })
-        }
-        
-
-        private onAddToStage2(event: egret.Event) {
-            let stage = this.stage;
-            // stage.dirtyRegionPolicy = "off";
-            // ResizeManager.getInstance().init(stage);
-            $facade = new mvc.Facade();
-            Core.stage = stage;
-            // sui.Panel.WIDTH = stage.stageWidth;
-            // sui.Panel.HEIGHT = stage.stageHeight;
-
-            game.GameEngine.init(stage);
-            // let engine = game.GameEngine.instance;
-            // let camera = new game.Camera();
-            // engine.camera = camera;
-            // stage.on(egret.Event.RESIZE, () => {
-            //     camera.setSize(stage.stageWidth, stage.stageHeight);
-            //     sui.Panel.WIDTH = stage.stageWidth;
-            //     sui.Panel.HEIGHT = stage.stageHeight;
-            // }, this)
-            // let scale = devicePixelRatio;
-            // console.log(scale);
-           
-            // Core.domain = param.domain;
-            // Core.loader = param.loader;
-            // mvc.Facade.on(core.NetEvent.WEB_COMPLETE, this.connectHandler, this);
-            // mvc.Facade.on(core.NetEvent.WEB_FAILED, this.failHandler, this);
-            new PreLoader();
         }
 
         private failHandler() {
