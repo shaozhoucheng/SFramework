@@ -8,5 +8,8 @@ module core.game {
             this.skinName = "resource/ui/panel/LoginPanel.exml";
             this._key = "Login"
         }
+
+        public tab_regist:eui.ToggleButton;
+        public tab_login:eui.ToggleButton;
     }
 }
