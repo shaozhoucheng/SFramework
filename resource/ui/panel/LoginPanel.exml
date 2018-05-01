@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin width="760" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image x="175.5" y="203" source="login.ad_bg"/>
-	<e:Image source="login.log_bg" x="182.85" y="203"/>
+	<e:Image source="login.log_bg" x="182.85" y="202"/>
 	<e:ToggleButton id="tab_regist" label="" x="397.67" y="238.67">
 		<e:skinName>
 		<e:Skin states="up,down,disabled">
@@ -18,5 +18,8 @@
 			</e:Skin>
 		</e:skinName>
 	</e:ToggleButton>
-	<e:Group width="200" height="200" x="239" y="300"/>
+	<e:Group width="292" height="238.66" x="234" y="297.33" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="login.account" x="22.67" y="42.67"/>
+		<e:TextInput id="accountInput" width="126" height="25.33" x="121" y="42.67" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
 </e:Skin>

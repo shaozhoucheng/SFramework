@@ -108,6 +108,7 @@ module core.sui {
             if (idx >= 0) {
                 let item = this._list[idx];
                 this.selectedItem = item;
+                item.selected = true;
             }
             else {
                 this.selectedItem = undefined;
