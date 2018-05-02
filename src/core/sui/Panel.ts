@@ -8,20 +8,6 @@ module core.sui {
 
         public layoutType: number;
         /**
-         * 面板宽度
-         * 
-         * @static
-         * @type {number}
-         */
-        // public static WIDTH: number = 720;
-        /**
-         * 面板高度
-         * 
-         * @static
-         * @type {number}
-         */
-        // public static HEIGHT: number = 1280;
-        /**
          * 模态颜色
          * 
          * @static
@@ -134,22 +120,32 @@ module core.sui {
         protected init() {
         }
 
-        private isStart: boolean = false;
+        private loadSkin: boolean = false;
+        private loadThm: boolean = false;
+        protected _thmName: string;
 
         public startSync() {
-            if (!this.isStart) {
-                this.isStart = true
+            //目前没搞清egret component 加载这块 直接ready
+            if (!this.loadThm) {
+                this.loadThm = true
+                let theme = new eui.Theme(this._thmName, this.stage);
+                theme.addEventListener(eui.UIEvent.COMPLETE, this.thmDataComplete, this);
+            }
+            // this.skinDataComplete();
+        }
+
+        private thmDataComplete(e: any) {
+            if (!this.loadSkin) {
+                this.loadSkin = true
                 RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.skinDataComplete, this);
                 RES.loadGroup(this._key);//加载资源组对应的图片
             }
-            //目前没搞清egret component 加载这块 直接ready
-
-            // this.skinDataComplete();
         }
 
         private skinDataComplete(e: any) {
             RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.skinDataComplete, this);
-            EXML.load(this.skinName, this.exmlDataComplete, this)
+            this.exmlDataComplete();
+            // EXML.load(this.skinName, this.exmlDataComplete, this)
         }
 
         doScale(scale: number) {

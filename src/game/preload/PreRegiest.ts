@@ -5,19 +5,9 @@ module core.game {
         }
 
         public initREG() {
-
-            let now = Date.now();
-
-            // PBMessageUtils.structByName = <any>PBMsgDict;
             let facade = $facade;
             // //初始化模块处理
-            // let mm = new mvc.ModuleManager();
-            // facade.bindModuleManager(mm);
-            // this.initMoudleChecker();
-            // let cfgs = DataLocator.getData(game.ConfigKey.GongNeng);
-            // mm.setCfgs(cfgs);
-
-            // mm.registerHandler(0, new ModuleHandler0());
+            facade.registerInlineMediator(ServerSelectPanelMediator, ModuleId.ServerSelect)
 
             //注册服务
             // facade.registerInlineProxy(LoginService,ServiceName.LoginService);

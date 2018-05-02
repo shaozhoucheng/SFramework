@@ -6,7 +6,7 @@ module core.game{
     
          /**
         * 由junyouH5数据生成工具，从F://vsworkspace/LearnGit/TestPython/jsons\GongNeng.json生成
-        * 创建时间：2018-04-25 14:13:09
+        * 创建时间：2018-05-02 17:18:26
         **/
          export class GongNengCfg extends mvc.BaseMCfg {
          
@@ -93,8 +93,10 @@ module core.game{
         
         
         
+        
 super.init(local);
 
+        
         
         
         

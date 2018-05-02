@@ -55,7 +55,7 @@ module core {
      */
     export function removeDisplay(display: egret.DisplayObject) {
         if (display && display.parent) {
-            display.parent.removeChild(display);
+            return display.parent.removeChild(display);
         }
     }
 

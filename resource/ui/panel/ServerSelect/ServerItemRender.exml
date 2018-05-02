@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="443" height="104" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="ServerSelect.listItemBkgd" x="0" y="0"/>
+	<e:Label id="label_serverStatus" text="Label" x="142" y="24" anchorOffsetX="0" width="134" verticalAlign="middle" textAlign="center" size="22"/>
+	<e:Label id="label_serverName" text="Label" x="122" y="63" anchorOffsetX="0" width="240" verticalAlign="middle" textAlign="center" size="22"/>
+</e:Skin>

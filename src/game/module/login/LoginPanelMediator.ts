@@ -18,22 +18,33 @@ module core.game {
 			let group = this.group = new sui.TabGroup();
 			group.addItem(view.tab_login)
 			group.addItem(view.tab_regist)
-			group.on(sui.SuiEvent.GROUP_CHANGE,this.onGroupChange,this);
+			group.on(sui.SuiEvent.GROUP_CHANGE, this.onGroupChange, this);
 		}
 
 
-		private onGroupChange()
+		private onGroupChange() {
+			let view = this.$view;
+			let index = this.group.selectedIndex;
+			view.loginview.visible = index == 0;
+			view.registview.visible = index == 1;
+		}
+
+		private onLoginBtnTouch(e?:egret.TouchEvent)
 		{
-			
+			$facade.toggle(ModuleId.ServerSelect);
 		}
 
 
 		public awake() {
 			let view = this.$view;
+			this.group.selectedIndex = 0;
+			view.btn_login.bindTouch(this.onLoginBtnTouch,this);
 		}
 
 
 		public sleep() {
+			let view = this.$view;
+			view.btn_login.looseTouch(this.onLoginBtnTouch,this);
 
 		}
 	}

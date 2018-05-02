@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="ServerMainPanel" width="354" height="506" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image source="test_png" x="0" y="0"/>
-	<e:Image id="face4" source="FTest_json.Kelvin 1_05" x="229" y="312"/>
-	<e:Image id="face3" source="FTest_json.Kelvin 27_5" x="14" y="312"/>
-	<e:Image id="face1" source="FTest_json.Kelvin 3_04" x="222" y="156"/>
-	<e:Image id="face2" source="FTest_json.Kelvin 9_08" x="31" y="160"/>
-</e:Skin>

@@ -5,32 +5,32 @@ module core.sui {
         private _selectedItem: eui.ToggleButton;
         private _selectedIndex: number = -1;
 
-        private container: egret.DisplayObjectContainer;
+        // private container: egret.DisplayObjectContainer;
 
-         constructor(container?: egret.DisplayObjectContainer) {
+         constructor() {
             super();
             this._list = [];
-            this.container = container;
+            // this.container = container;
             this._checklist = {};
-            this._displaylist = {};
+            // this._displaylist = {};
         }
         
         private _checklist: { [index: number]: Function };
-        private _displaylist: { [index: number]: egret.DisplayObject };
+        // private _displaylist: { [index: number]: egret.DisplayObject };
 
          /**
          * 添加单个组件
          * 
          * @param {IGroupItem} item
          */
-        public addItem(item: eui.ToggleButton, display?: egret.DisplayObject, check?: () => boolean) {
+        public addItem(item: eui.ToggleButton,check?: () => boolean) {
             if (item) {
                 this._list.pushOnce(item);
                 let index = this._list.indexOf(item);
                 if (check)
                     this._checklist[index] = check;
-                if(display)
-                    this._displaylist[index] = display;
+                // if(display)
+                //     this._displaylist[index] = display;
                 item.on(egret.TouchEvent.TOUCH_TAP, this.touchHandler, this);
             }
         }
@@ -51,8 +51,8 @@ module core.sui {
         public removeItem(item: eui.ToggleButton) {
             if (item) {
                 let index = this._list.indexOf(item);
-                let display = this._displaylist[index];
-                if(display) removeDisplay(display);
+                // let display = this._displaylist[index];
+                // if(display) removeDisplay(display);
                 this._list.remove(item);
                 item.off(egret.TouchEvent.TOUCH_TAP, this.touchHandler, this);
             }
@@ -69,11 +69,11 @@ module core.sui {
                 if ("selected" in _selectedItem) {
                     _selectedItem["selected"] = false;
                 }
-                let index = this._list.indexOf(item);
-                let display = this._displaylist[index];
-                if (display) {
-                    removeDisplay(display);
-                }
+                // let index = this._list.indexOf(item);
+                // let display = this._displaylist[index];
+                // if (display) {
+                //     removeDisplay(display);
+                // }
             }
             this._selectedItem = item;
             _selectedItem = this._selectedItem;
@@ -85,11 +85,11 @@ module core.sui {
                 if ("selected" in _selectedItem) {
                     _selectedItem["selected"] = true;
                 }
-                let index = this._list.indexOf(item);
-                let display = this._displaylist[index];
-                if (display && this.container) {
-                    this.container.addChild(display);
-                }
+                // let index = this._list.indexOf(item);
+                // let display = this._displaylist[index];
+                // if (display && this.container) {
+                //     this.container.addChild(display);
+                // }
             }
 
             this.dispatchEventWith(<any>SuiEvent.GROUP_CHANGE);
