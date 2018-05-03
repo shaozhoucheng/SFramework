@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin width="460" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image source="ServerSelect.bg" scale9Grid="12,12,12,12" y="0" x="0" anchorOffsetX="0" width="460" anchorOffsetY="0" height="679.67"/>
-	<e:Scroller width="446.67" height="582.67" x="7" y="67" anchorOffsetX="0" anchorOffsetY="0">
-		<e:List id="serverList" x="7" y="67" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
-			<e:layout>
-			<e:VerticalLayout/>
-			</e:layout>
-		</e:List>
-	</e:Scroller>
 </e:Skin>

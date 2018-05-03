@@ -125,6 +125,7 @@ module core {
          * @private
          */
         private onData = (ev: MessageEvent) => {
+            //ab 新接收的数据 rb已经接收的数据 newRecieved组合起来的数据
             let ab = new Uint8Array(<ArrayBuffer>ev.data);
             let rb
             if (this._recievedBuffer) {
@@ -132,7 +133,7 @@ module core {
             } else {
                 rb = new Uint8Array(0);
             }
-
+            
             let rbLen = rb.length;
             let abLen = ab.length;
             let newRecieved = new Uint8Array(rbLen + abLen);

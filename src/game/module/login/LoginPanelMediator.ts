@@ -29,22 +29,22 @@ module core.game {
 			view.registview.visible = index == 1;
 		}
 
-		private onLoginBtnTouch(e?:egret.TouchEvent)
-		{
+		private onLoginBtnTouch(e?: egret.TouchEvent) {
 			$facade.toggle(ModuleId.ServerSelect);
+			$facade.toggle(ModuleId.Login);
 		}
 
 
 		public awake() {
 			let view = this.$view;
 			this.group.selectedIndex = 0;
-			view.btn_login.bindTouch(this.onLoginBtnTouch,this);
+			view.btn_login.bindTouch(this.onLoginBtnTouch, this);
 		}
 
 
 		public sleep() {
 			let view = this.$view;
-			view.btn_login.looseTouch(this.onLoginBtnTouch,this);
+			view.btn_login.looseTouch(this.onLoginBtnTouch, this);
 
 		}
 	}

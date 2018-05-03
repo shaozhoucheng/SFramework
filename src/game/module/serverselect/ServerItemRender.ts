@@ -1,26 +1,23 @@
 module core.game {
-    export class ServerItemRender extends eui.ItemRenderer {
+	export class ServerItemRender extends sui.ListItemRender<ServerVO>{
 
-        public label_serverStatus: eui.Label;
+		public constructor() {
+			super();
+			this.skin = this.render = new CodeServerItemRender();
+		}
 
-        public label_serverName: eui.Label;
+		protected bindComponent() {
+			super.bindComponent();
+		}
 
-        constructor() {
-            super();
-            // this.skinName = "ServerItemRender";
-            this.skinName = "resource/ui/panel/ServerSelect/ServerItemRender.exml";
-        }
+		private render: CodeServerItemRender;
 
-        protected createChildren(): void {
-            super.createChildren();
-        }
-
-        protected dataChanged(): void {
-            console.log("\tCheckbox:", this.data);
-            let render = this;
-            let data = this.data;
-            render.label_serverStatus.text = data.status;
-            render.label_serverName.text = data.name;
-        }
-    }
+		public setData(value: ServerVO) {
+			super.setData(value);
+			if (!value) return;
+			let render = this.render;
+			render.label_serverName.text = value.name;
+			render.label_serverStatus.text = value.status + "";
+		}
+	}
 }

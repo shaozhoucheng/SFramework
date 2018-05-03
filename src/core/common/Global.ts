@@ -82,7 +82,7 @@ module core {
 					_now = now;
 					_frameNow += delta;
 					_callLater.tick(now);
-					render.call(ticker);
+					render.call(ticker, true, now - old);
 					_tweenManager.tick(now - old);
 				} else {
 					try {
@@ -167,7 +167,7 @@ module core {
 		}
 
 		function removeTween(target: any) {
-			if(target) _tweenManager.removeTweens(target);
+			if (target) _tweenManager.removeTweens(target);
 		}
 	})();
 }
