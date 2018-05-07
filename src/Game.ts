@@ -1,11 +1,11 @@
 module core.game {
-export class Game extends egret.DisplayObjectContainer {
+    export class Game extends egret.DisplayObjectContainer {
         constructor() {
             super();
             egret.ImageLoader.crossOrigin = "anonymous";
             core.Global.initTick();
             this.on(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
-            RES.setMaxLoadingThread (4);
+            RES.setMaxLoadingThread(4);
         }
 
         private onAddToStage(event: egret.Event) {
@@ -28,24 +28,25 @@ export class Game extends egret.DisplayObjectContainer {
             egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
 
 
-            this.runGame().catch(e => {
-                console.log(e);
-            })
-        }
-
-        private async runGame() {
-            await this.loadResource()
+            this.initScene();
+            // this.runGame().catch(e => {
+            //     console.log(e);
+            // })
             this.createGameScene();
-            // const result = await RES.getResAsync("description_json",null,this)
-            // await platform.login();
-            // const userInfo = await platform.getUserInfo();
-            // console.log(userInfo);
-
         }
 
-        private createGameScene()
-        {
-            
+        // private async runGame() {
+        //     // await this.loadResource()
+        //     this.createGameScene();
+        //     // const result = await RES.getResAsync("description_json",null,this)
+        //     // await platform.login();
+        //     // const userInfo = await platform.getUserInfo();
+        //     // console.log(userInfo);
+
+        // }
+
+        private createGameScene() {
+
             let stage = this.stage;
             // stage.dirtyRegionPolicy = "off";
             ResizeManager.getInstance().init(stage);
@@ -67,7 +68,7 @@ export class Game extends egret.DisplayObjectContainer {
             // }, this)
             // let scale = devicePixelRatio;
             // console.log(scale);
-           
+
             // Core.domain = param.domain;
             // Core.loader = param.loader;
             // mvc.Facade.on(core.NetEvent.WEB_COMPLETE, this.connectHandler, this);
@@ -75,31 +76,41 @@ export class Game extends egret.DisplayObjectContainer {
             new PreLoader();
         }
 
-        private async loadResource() {
-            try {
-                // const loadingView = new LoadingUI();
-                // this.stage.addChild(loadingView);
-                await RES.loadConfig("resource/default.res.json", "resource/");
-                await RES.loadConfig("resource/resource_ui.json", "resource/");
-                await this.loadTheme();
-                await RES.loadGroup("preload");
-                // this.stage.removeChild(loadingView);
-            }
-            catch (e) {
-                console.error(e);
-            }
+        /**
+     * 初始化所有场景
+     */
+        private initScene(): void {
+            getInstance(SceneManager).register(SceneConst.Login, new LoginScene());
+            getInstance(SceneManager).register(SceneConst.Story, new StoryScene());
+            getInstance(SceneManager).register(SceneConst.Home, new HomeScene());
         }
 
-        private loadTheme() {
-            return new Promise((resolve, reject) => {
-                // load skin theme configuration file, you can manually modify the file. And replace the default skin.
-                //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
-                let theme = new eui.Theme("resource/default.thm.json", this.stage);
-                theme.addEventListener(eui.UIEvent.COMPLETE, () => {
-                    resolve();
-                }, this);
-            })
-        }
+
+        // private async loadResource() {
+        //     try {
+        //         // const loadingView = new LoadingUI();
+        //         // this.stage.addChild(loadingView);
+        //         await RES.loadConfig("resource/default.res.json", "resource/");
+        //         await RES.loadConfig("resource/resource_ui.json", "resource/");
+        //         await this.loadTheme();
+        //         await RES.loadGroup("preload");
+        //         // this.stage.removeChild(loadingView);
+        //     }
+        //     catch (e) {
+        //         console.error(e);
+        //     }
+        // }
+
+        // private loadTheme() {
+        //     return new Promise((resolve, reject) => {
+        //         // load skin theme configuration file, you can manually modify the file. And replace the default skin.
+        //         //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
+        //         let theme = new eui.Theme("resource/default.thm.json", this.stage);
+        //         theme.addEventListener(eui.UIEvent.COMPLETE, () => {
+        //             resolve();
+        //         }, this);
+        //     })
+        // }
 
         private failHandler() {
             // $reportGameStep(gameReport.SOCKET_CONN_FAIL);

@@ -485,14 +485,14 @@ module core {
 
             out: while (true) {
                 let msgLength = 0;
-                let tmpPosition = bytes.position;
+                let tmpPosition = bytes.position;//0
                 let offset = 0;
                 //先分离出长度
                 while (true) {
                     if (bytes.readAvailable) {
                         var tmp = bytes.readByte();
                         if (tmp > 0) {
-                            msgLength |= tmp << offset;
+                            msgLength |= tmp << offset;//单条协议长度
                             break;
                         }
                         else {
