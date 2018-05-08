@@ -10,6 +10,24 @@ module core.game {
 			super.bindComponent();
 		}
 
+		public awake()
+		{
+			let render = this.render;
+			render.on(egret.TouchEvent.TOUCH_TAP,this.onSkinTouch,this)
+		}
+
+		public sleep()
+		{
+			let render = this.render;
+			render.off(egret.TouchEvent.TOUCH_TAP,this.onSkinTouch,this)
+		}
+
+		private onSkinTouch()
+		{
+			$facade.toggle(ModuleId.ServerSelect);
+			$facade.toggle(ModuleId.Notice)
+		}
+
 		private render: CodeServerItemRender;
 
 		public setData(value: ServerVO) {

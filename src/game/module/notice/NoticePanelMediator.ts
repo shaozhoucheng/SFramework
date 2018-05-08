@@ -13,9 +13,12 @@ module core.game {
         }
 
         protected afterAllReady() {
+            let view = this.$view;
+            view.bg.source = "http://bbs.egret-labs.org/static/image/common/logo_sc_s.png"
         }
 
         public awake() {
+
         }
 
 

@@ -1,7 +1,7 @@
 module core.game {
     export class NoticePanel extends sui.Panel {
 
-        public serverList:eui.List;
+        public bg:eui.Image;
 
         protected bindComponents() {
         }
