@@ -4,5 +4,7 @@
     ServerSelect: "ServerSelect",
     //登录界面
     Login: "Login",
+    //公告界面
+    Notice: "Notice",
   }
 }

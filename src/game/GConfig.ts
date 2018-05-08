@@ -1,6 +1,6 @@
 module core.game {
     export interface IConfigKey {     
-    	GongNeng:string
+    	GongNeng:string;
 	}
 	ConfigKey = {
 		GongNeng: "GongNeng",

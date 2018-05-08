@@ -8,6 +8,7 @@ module core.game {
             let facade = $facade;
             // //初始化模块处理
             facade.registerInlineMediator(ServerSelectPanelMediator, ModuleId.ServerSelect)
+            facade.registerInlineMediator(NoticePanelMediator, ModuleId.Notice)
 
             //注册服务
             // facade.registerInlineProxy(LoginService,ServiceName.LoginService);

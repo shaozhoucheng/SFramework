@@ -39,6 +39,17 @@ module core.game {
 			let view = this.$view;
 			this.group.selectedIndex = 0;
 			view.btn_login.bindTouch(this.onLoginBtnTouch, this);
+			this.test();
+		}
+
+		private test() {
+			let pngs = RES.getRes("NoticeStartBtn_png")
+			let jsons = RES.getRes("NoticeStartBtn_json")
+			var mcFactory: egret.MovieClipDataFactory = new egret.MovieClipDataFactory(jsons, pngs);
+			var mc1: egret.MovieClip = new egret.MovieClip(mcFactory.generateMovieClipData("btn_game_start"));
+			mc1.x = 100;
+			this.$view.addChild(mc1);
+			mc1.gotoAndPlay("playBtn", -1);
 		}
 
 
