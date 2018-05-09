@@ -20,6 +20,9 @@ module core.game {
          */
         public onExit(): void {
             super.onExit();
+            $facade.toggle(ModuleId.Notice,0)
+            RES.destroyRes("Login")
+            RES.destroyRes("ServerSelect")
         }
     }
 }

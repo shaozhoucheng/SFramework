@@ -15,36 +15,49 @@ module core.game {
         protected afterAllReady() {
             let view = this.$view;
             view.bg.source = "resource/remote/i/start.jpg";
-            RES.getResByUrl("resource/remote/i/start.jpg",null,null,RES.ResourceItem.TYPE_IMAGE);
+            RES.getResByUrl("resource/remote/i/start.jpg", null, null, RES.ResourceItem.TYPE_IMAGE);
+        }
+
+        private ani: AniRender
+
+        private showAniBtn() {
+            let view = this.$view;
+            let ani = this.ani;
+            if (ani) {
+                ani.onRecycle();
+                ani = undefined;
+            }
+            ani = this.ani = game.AniRender.getAni("NoticeStartBtn");
+            ani.frameRate = 12;
+            ani.play();
+            let display = ani.displaymc;
+            display.x = 235;
+            display.y = 350;
+            view.addChild(display);
+            display.touchEnabled= true;
+            display.on(egret.TouchEvent.TOUCH_TAP, this.onStartBtnTouch, this)
+        }
+
+        private onStartBtnTouch(evt: egret.TouchEvent) {
+            let newPlayer = true;
+            if (newPlayer) {
+                getInstance(SceneManager).runScene(SceneConst.Story)
+            } else {
+                getInstance(SceneManager).runScene(SceneConst.Home)
+            }
         }
 
         public awake() {
-			this.showAniBtn();
+            this.showAniBtn();
         }
-
-        private ani:AniRender
-
-		private showAniBtn() {
-            let view = this.$view;
-			let ani = this.ani;
-            if (ani) {
-				ani.onRecycle();
-				ani = undefined;
-			}
-			ani = this.ani = game.AniRender.getAni("NoticeStartBtn");
-            ani.frameRate = 12;
-			ani.play();
-			ani.displaymc.x = 235;
-			ani.displaymc.y = 350;
-			view.addChild(ani.displaymc);
-		}
 
         public sleep() {
             let ani = this.ani;
             if (ani) {
-				ani.onRecycle();
-				ani = undefined;
-			}
+                ani.onRecycle();
+                ani = undefined;
+                ani.displaymc.off(egret.TouchEvent.TOUCH_TAP, this.onStartBtnTouch, this)
+            }
         }
     }
 }
