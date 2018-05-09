@@ -14,16 +14,37 @@ module core.game {
 
         protected afterAllReady() {
             let view = this.$view;
-            view.bg.source = "http://bbs.egret-labs.org/static/image/common/logo_sc_s.png"
+            view.bg.source = "resource/remote/i/start.jpg";
+            RES.getResByUrl("resource/remote/i/start.jpg",null,null,RES.ResourceItem.TYPE_IMAGE);
         }
 
         public awake() {
-
+			this.showAniBtn();
         }
 
+        private ani:AniRender
+
+		private showAniBtn() {
+            let view = this.$view;
+			let ani = this.ani;
+            if (ani) {
+				ani.onRecycle();
+				ani = undefined;
+			}
+			ani = this.ani = game.AniRender.getAni("NoticeStartBtn");
+            ani.frameRate = 12;
+			ani.play();
+			ani.displaymc.x = 235;
+			ani.displaymc.y = 350;
+			view.addChild(ani.displaymc);
+		}
 
         public sleep() {
-
+            let ani = this.ani;
+            if (ani) {
+				ani.onRecycle();
+				ani = undefined;
+			}
         }
     }
 }

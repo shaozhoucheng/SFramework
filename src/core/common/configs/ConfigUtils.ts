@@ -54,7 +54,7 @@ module core {
          */
         public static getResUrl(uri: string, sameDomain?: boolean): string {
             if (sameDomain) {
-                return "resource/" + uri;
+                return "resource/remote/" + uri;
             }
             var hash = this._hash;
             if (hash) {

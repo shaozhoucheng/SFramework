@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,NoticeStartBtn_png,NoticeStartBtn_json",
+			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common",
 			"name": "preload"
 		}
 	],
@@ -31,16 +31,6 @@
 			"type": "sheet",
 			"name": "common",
 			"subkeys": "btn_no,btn_quicksend,btn_yes"
-		},
-		{
-			"url": "remote/ani/NoticeStartBtn.png",
-			"type": "image",
-			"name": "NoticeStartBtn_png"
-		},
-		{
-			"url": "remote/ani/NoticeStartBtn.json",
-			"type": "json",
-			"name": "NoticeStartBtn_json"
 		}
 	]
 }
