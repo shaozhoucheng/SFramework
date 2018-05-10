@@ -15,7 +15,7 @@ module core.game {
         protected afterAllReady() {
             let view = this.$view;
             view.bg.source = "resource/remote/i/start.jpg";
-            RES.getResByUrl("resource/remote/i/start.jpg", null, null, RES.ResourceItem.TYPE_IMAGE);
+            // RES.getResByUrl("resource/remote/i/start.jpg", null, null, RES.ResourceItem.TYPE_IMAGE);
         }
 
         private ani: AniRender
@@ -54,9 +54,9 @@ module core.game {
         public sleep() {
             let ani = this.ani;
             if (ani) {
+                ani.displaymc.off(egret.TouchEvent.TOUCH_TAP, this.onStartBtnTouch, this)
                 ani.onRecycle();
                 ani = undefined;
-                ani.displaymc.off(egret.TouchEvent.TOUCH_TAP, this.onStartBtnTouch, this)
             }
         }
     }

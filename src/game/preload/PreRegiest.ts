@@ -9,6 +9,8 @@ module core.game {
             // //初始化模块处理
             facade.registerInlineMediator(ServerSelectPanelMediator, ModuleId.ServerSelect)
             facade.registerInlineMediator(NoticePanelMediator, ModuleId.Notice)
+            facade.registerInlineMediator(ConfirmAgreePanelMediator, ModuleId.ConfirmAgree)
+            facade.registerInlineMediator(CreateRolePanelMediator, ModuleId.CreateRole)
 
             //注册服务
             // facade.registerInlineProxy(LoginService,ServiceName.LoginService);

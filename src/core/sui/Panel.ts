@@ -135,6 +135,10 @@ module core.sui {
         }
 
         private thmDataComplete(e: any) {
+            if (!this._key) {
+                this.loadSkin = true
+                this.skinDataComplete();
+            }
             if (!this.loadSkin) {
                 this.loadSkin = true
                 RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.skinDataComplete, this);
@@ -142,7 +146,7 @@ module core.sui {
             }
         }
 
-        private skinDataComplete(e: any) {
+        private skinDataComplete(e?: any) {
             RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.skinDataComplete, this);
             this.exmlDataComplete();
             // EXML.load(this.skinName, this.exmlDataComplete, this)

@@ -12,7 +12,7 @@ module core.game {
          */
         public onEnter(): void {
             super.onEnter();
-            
+            $facade.toggle(ModuleId.ConfirmAgree, 1);
         }
 
         /**

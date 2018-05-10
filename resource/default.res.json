@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common",
+			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base",
 			"name": "preload"
 		}
 	],
@@ -30,7 +30,22 @@
 			"url": "ui/skin/Common/common.json",
 			"type": "sheet",
 			"name": "common",
-			"subkeys": "btn_no,btn_quicksend,btn_yes"
+			"subkeys": "btn_nextpage,btn_no,btn_quicksend,btn_yes,common_background_00"
+		},
+		{
+			"url": "remote/i/tmp/main_map_upperparts.png",
+			"type": "image",
+			"name": "main_map_upperparts"
+		},
+		{
+			"url": "remote/i/tmp/band.png",
+			"type": "image",
+			"name": "band"
+		},
+		{
+			"url": "remote/i/tmp/friendship_map_base.png",
+			"type": "image",
+			"name": "friendship_map_base"
 		}
 	]
 }

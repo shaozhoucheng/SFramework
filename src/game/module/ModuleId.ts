@@ -6,5 +6,7 @@
     Login: "Login",
     //公告界面
     Notice: "Notice",
+    ConfirmAgree: "ConfirmAgree",
+    CreateRole: "CreateRole",
   }
 }
