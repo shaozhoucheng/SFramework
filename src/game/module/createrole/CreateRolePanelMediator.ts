@@ -19,7 +19,6 @@ module core.game {
             for(let i =1;i<=16;i++)
             {
 				let tab:eui.ToggleButton= view["tab_"+i];
-				// tab.test = true;
                 group.addItem(tab);
             }
 			group.on(sui.SuiEvent.GROUP_CHANGE, this.onGroupChange, this);
@@ -37,7 +36,7 @@ module core.game {
 
 		public awake() {
 			let view = this.$view;
-			this.group.selectedIndex = Math.floor(Math.random2(1,17));
+			this.group.selectedIndex = Math.floor(Math.random2(1,16));
 		}
 
 

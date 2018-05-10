@@ -6,7 +6,7 @@
 	<e:Image source="friendship_map_base" x="104" y="308.5"/>
 	<sui:SButton label="Button" x="255" y="255"/>
 	<e:EditableText id="nameInput" width="171" height="23" text="" x="295" y="190" anchorOffsetX="0" anchorOffsetY="0" textColor="0x000000" size="20" textAlign="center" prompt="输入角色名"/>
-	<e:Label text="※你的名字将用于里和部队名。\n名字中无法使用逗号和空格。\n且无法使用与其他用户相同的名字。" x="256" y="213" anchorOffsetX="0" width="294" anchorOffsetY="0" height="57" size="18" textColor="0xff0000"/>
+
 	<e:Button label="" x="338" y="273">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
@@ -15,8 +15,8 @@
 			</e:Skin>
 		</e:skinName>
 	</e:Button>
-	<e:Label text="要从哪个大名家的境内开始呢？" x="214.5" y="318" anchorOffsetX="0" width="331" size="22" textAlign="center" strokeColor="0x000000" bold="true"/>
-	<e:Label text="※游戏的推进不会因开始位置不同而改变。" x="184" y="603.5" size="18" anchorOffsetX="0" width="406" anchorOffsetY="0" height="26" textAlign="center" verticalAlign="middle"/>
+
+
 	<e:ToggleButton id="tab_1" label="" x="544" y="347">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
@@ -57,28 +57,30 @@
 			</e:Skin>
 		</e:skinName>
 	</e:ToggleButton>
-	<e:ToggleButton id="tab_6" label="" x="416" y="501">
-		<e:skinName>
-			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="CreateRole.friendship_daimyo_06_0" source.down="CreateRole.friendship_daimyo_06_6"/>
-			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-			</e:Skin>
-		</e:skinName>
-	</e:ToggleButton>
-	<e:ToggleButton id="tab_7" label="" x="382" y="483">
-		<e:skinName>
-			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="CreateRole.friendship_daimyo_07_0" source.down="CreateRole.friendship_daimyo_07_6"/>
-			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-			</e:Skin>
-		</e:skinName>
-	</e:ToggleButton>
+
+
 	<e:ToggleButton id="tab_8" label="" x="414" y="403">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="CreateRole.friendship_daimyo_08_0" source.down="CreateRole.friendship_daimyo_08_6"/>
 			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
 			</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+	<e:ToggleButton id="tab_7" label="" x="382" y="483">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="CreateRole.friendship_daimyo_07_0" source.down="CreateRole.friendship_daimyo_07_6"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+	<e:ToggleButton id="tab_6" label="" x="416" y="501">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="CreateRole.friendship_daimyo_06_0" source.down="CreateRole.friendship_daimyo_06_6"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
 		</e:skinName>
 	</e:ToggleButton>
 	<e:ToggleButton id="tab_9" label="" x="326" y="453">
@@ -145,4 +147,23 @@
 			</e:Skin>
 		</e:skinName>
 	</e:ToggleButton>
+	<e:Image source="CreateRole.friendship_nyamon_01" x="595" y="429"/>
+	<e:Image source="CreateRole.friendship_nyamon_02" x="577" y="369"/>
+	<e:Image source="CreateRole.friendship_nyamon_03" x="535" y="502"/>
+	<e:Image source="CreateRole.friendship_nyamon_04" y="472" x="468"/>
+	<e:Image source="CreateRole.friendship_nyamon_05" x="510" y="412"/>
+	<e:Image source="CreateRole.friendship_nyamon_06" x="437" y="523"/>
+	<e:Image source="CreateRole.friendship_nyamon_07" x="396" y="514"/>
+	<e:Image source="CreateRole.friendship_nyamon_08" x="432" y="450"/>
+	<e:Image source="CreateRole.friendship_nyamon_09" x="345" y="514"/>
+	<e:Image source="CreateRole.friendship_nyamon_10" x="379" y="429"/>
+	<e:Image source="CreateRole.friendship_nyamon_11" x="255" y="396.5"/>
+	<e:Image source="CreateRole.friendship_nyamon_12" x="319" y="397"/>
+	<e:Image source="CreateRole.friendship_nyamon_13" x="266" y="493"/>
+	<e:Image source="CreateRole.friendship_nyamon_14" x="157" y="441"/>
+	<e:Image source="CreateRole.friendship_nyamon_15" x="206" y="430"/>
+	<e:Image source="CreateRole.friendship_nyamon_16" x="160" y="525"/>
+	<e:Label text="※你的名字将用于里和部队名。\n名字中无法使用逗号和空格。\n且无法使用与其他用户相同的名字。" x="256" y="213" anchorOffsetX="0" width="294" anchorOffsetY="0" height="57" size="18" textColor="0xff0000"/>
+	<e:Label text="※游戏的推进不会因开始位置不同而改变。" x="184" y="603.5" size="18" anchorOffsetX="0" width="406" anchorOffsetY="0" height="26" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="要从哪个大名家的境内开始呢？" x="214.5" y="318" anchorOffsetX="0" width="331" size="22" textAlign="center" strokeColor="0x000000" bold="true"/>
 </e:Skin>
