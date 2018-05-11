@@ -19,7 +19,7 @@ module core.game {
             let itemList = this.list = new sui.PageList<ServerVO, ServerItemRender>(ServerItemRender, 445, 110);
             view.addChild(itemList);
             let scroller: sui.Scroller = new sui.Scroller();
-            let rect = new egret.Rectangle(0, 0, 660, 780);
+            let rect = new egret.Rectangle(0, 0, 445, 660);
             scroller.bindObj(this.list, rect);
             // let list = view.serverList
             // list.itemRenderer = ServerItemRender;
