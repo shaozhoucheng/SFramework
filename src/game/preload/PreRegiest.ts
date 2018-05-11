@@ -11,6 +11,7 @@ module core.game {
             facade.registerInlineMediator(NoticePanelMediator, ModuleId.Notice)
             facade.registerInlineMediator(ConfirmAgreePanelMediator, ModuleId.ConfirmAgree)
             facade.registerInlineMediator(CreateRolePanelMediator, ModuleId.CreateRole)
+            facade.registerInlineMediator(SubtitlesPanelMediator, ModuleId.Subtitles)
 
             //注册服务
             // facade.registerInlineProxy(LoginService,ServiceName.LoginService);

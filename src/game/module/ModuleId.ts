@@ -8,5 +8,6 @@
     Notice: "Notice",
     ConfirmAgree: "ConfirmAgree",
     CreateRole: "CreateRole",
+    Subtitles: "Subtitles",
   }
 }
