@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin  width="216" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="dynamicGroup" width="216" height="300" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="card_background_02" x="0" y="0"/>
+	</e:Group>
+	<e:Group width="216" height="300" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:BitmapLabel id="txt_gong" width="32" height="15" x="4" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_fang" width="32" height="15" x="37" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_su" width="32" height="15" x="69" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_de" width="32" height="15" x="102" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_ce" width="32" height="15" x="132" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

@@ -1,4 +1,4 @@
-module core {
+module shao {
 	/**
 	 * 网络事件的常量集
 	 * @author 

@@ -1,4 +1,4 @@
-module core {
+module shao {
 
     /**
      * 可回收的对象

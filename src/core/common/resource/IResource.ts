@@ -1,4 +1,4 @@
-module core {
+module shao {
     /**
       * 基于时间回收的资源
       */

@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class PreLoader {
         /**初始化加载
          * 1.加载des.res.json
@@ -14,7 +14,7 @@ module core.game {
             // let base = egret["baseParams"];
             // let newPlayer = base["newPlayer"];
             // if (newPlayer) {
-            //     mvc.Facade.on(core.EventConst.NEW_LOADER_START, this.newLoader, this);
+            //     mvc.Facade.on(shao.EventConst.NEW_LOADER_START, this.newLoader, this);
             //     //szc 屏蔽
             //     // mvc.Facade.on(BaseService.BEFORE_ENTER_GAME, this.onReshowLoader, this);
 
@@ -174,7 +174,7 @@ module core.game {
             //解析配置数据
             let gameRes = RES.getRes("game");
             game.initData();
-            core.ConfigUtils.setData(gameRes);
+            shao.ConfigUtils.setData(gameRes);
             var ConfigKey = game.ConfigKey;
             // NameUtils.loadNameLib(gameRes.params.nameLib);
             // WordFilter.loadDirtyWord(gameRes.params.dirty);

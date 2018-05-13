@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base",
+			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base,card_num_param_fnt,card_num_param_png",
 			"name": "preload"
 		}
 	],
@@ -46,6 +46,26 @@
 			"url": "remote/i/tmp/friendship_map_base.png",
 			"type": "image",
 			"name": "friendship_map_base"
+		},
+		{
+			"url": "ui/skin/Common/card_num_param.fnt",
+			"type": "font",
+			"name": "card_num_param_fnt"
+		},
+		{
+			"url": "ui/skin/Common/card_num_param.png",
+			"type": "image",
+			"name": "card_num_param_png"
+		},
+		{
+			"url": "remote/o/herocard/card_background_01.jpg",
+			"type": "image",
+			"name": "card_background_01"
+		},
+		{
+			"url": "remote/o/herocard/card_background_02.jpg",
+			"type": "image",
+			"name": "card_background_02"
 		}
 	]
 }

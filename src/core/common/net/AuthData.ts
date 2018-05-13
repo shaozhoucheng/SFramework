@@ -1,4 +1,4 @@
-module core {
+module shao {
 	/**
 	 * 平台数据
 	 * @author builder

@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export interface ResPrefixConstructor {
         /**
          * 刀光前缀
@@ -64,42 +64,6 @@ module core.game {
         O: "o/",
         IM: "im/",
 
-        ClanFuben: "o/clanfuben/",
-        ChengZhang: "o/chengzhang/",
-        ClanTask: "o/clantask/",
-        NewModule: "o/newmodule/",
-        TuJing: "o/tujing/",
-        ChengJiu: "o/chengjiu/",
-        Fuben: "o/fuben/",
-        CreateRole: "o/createrole/",
-        DuanZao: "o/duanzao/",
-        SevenDay: "o/sevenday/",
-        Fabao: "o/fabao/",
-        Activity: "o/activity/",
-        Center: "o/center/",
-        Recharge: "o/recharge/",
-        FailResult: "o/failresult/",
-        BigBg: "o/bigbg/",
-        IconTip: "o/icontip/",
-        TimeActivity: "o/timeactivity/",
-        Challenge: "o/challenge/",
-        Fuli: "o/fuli/",
-        YingHun: "o/yinghun/",
-        RiChang: "o/richang/",
-        GongCheng:"o/gongcheng/",
-        RenderBg:"o/renderbg/",
-        MiddleBg:"o/middlebg/",
-        ClanManage:"o/clanmanage/",
-        Attribute:"o/attribute/",
-        ModuleOpen:"o/moduleopen/",
-        Title:"o/title/",
-        Tisheng:"o/tisheng/",
-        Vip:"o/vip/",
-        ChuanQiZhiZun:"o/chuanqizhizun/",
-        KaiFu:"o/kaifu/",
-        GuanXingTai:"o/guanxingtai/",
-        ChiBang: "o/chibang/",
-        ChengZhu: "o/chengzhu/",
-        Chat: "o/Chat/",
+        Story: "o/story/",
     };
 }

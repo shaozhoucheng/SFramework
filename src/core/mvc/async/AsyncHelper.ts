@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * 异步工具类，用于加方法兼听
 	 * @author builder

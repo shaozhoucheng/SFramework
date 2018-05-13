@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * 模块检测器 
 	 * @author 

@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class LoadingUI extends egret.Sprite {
 
         private _textField: egret.TextField;

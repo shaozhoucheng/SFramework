@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
 	export class SubtitlesPanelMediator extends mvc.Mediator {
 		constructor() {
 			super(ModuleId.Subtitles);
@@ -44,11 +44,13 @@ module core.game {
 		private subtitle: sui.Image
 
 		private onStartBtnTouch() {
+			$facade.toggle(ModuleId.Story, 1)
+			$facade.toggle(ModuleId.Subtitles, 0)
 		}
 
 		public awake() {
 			let view = this.$view;
-			this.subtitle.source = "story/game_start_story.png"
+			this.subtitle.source = "o/story/game_start_story.png"
 			view.btn_start.bindTouch(this.onStartBtnTouch, this);
 		}
 

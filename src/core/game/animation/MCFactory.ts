@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class MCFactory {
         private _factorys: { [key: string]: egret.MovieClipDataFactory };
 

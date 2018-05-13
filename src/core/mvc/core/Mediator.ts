@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 
     import Event = egret.Event;
 	/**
@@ -274,7 +274,7 @@ module core.mvc {
         }
     }
 }
-module core {
+module shao {
     /**
     * 使用@d_interest 注入 添加关注
     * 关注为事件处理回调，只会在awake时，添加到事件监听列表

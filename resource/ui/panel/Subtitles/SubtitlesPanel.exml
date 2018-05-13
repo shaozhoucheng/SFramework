@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin width="760" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:sui="core.sui.*" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+<e:Skin width="760" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:sui="shao.sui.*" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
 	<w:Declarations>
 	</w:Declarations>
 	<e:Rect id="maskRect" width="568" height="357" x="96" y="90.34" anchorOffsetX="0" anchorOffsetY="0"/>

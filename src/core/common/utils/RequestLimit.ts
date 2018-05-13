@@ -1,4 +1,4 @@
-module core {
+module shao {
 	/**
 	 * 请求限制
 	 * @author builder

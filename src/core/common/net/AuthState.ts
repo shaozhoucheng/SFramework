@@ -1,4 +1,4 @@
-module core {
+module shao {
         /**
          * 用户认证
          * @author builder

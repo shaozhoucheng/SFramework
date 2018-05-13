@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
 	/**
 	 * 用于处理无方向的动画信息
 	 * @author builder

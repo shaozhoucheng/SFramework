@@ -1,4 +1,4 @@
-﻿module core.game {
+﻿module shao.game {
   export const ModuleId = {
     /**服务器主面板 */
     ServerSelect: "ServerSelect",
@@ -9,5 +9,6 @@
     ConfirmAgree: "ConfirmAgree",
     CreateRole: "CreateRole",
     Subtitles: "Subtitles",
+    Story: "Story",
   }
 }

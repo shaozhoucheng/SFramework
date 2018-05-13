@@ -1,4 +1,4 @@
-module core {
+module shao {
 
 	/**
 	 * 用于发送的网络数据<br/>

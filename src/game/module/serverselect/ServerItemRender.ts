@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
 	export class ServerItemRender extends sui.ListItemRender<ServerVO>{
 
 		public constructor() {

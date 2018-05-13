@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
 	export class PreConnect {
 		public constructor() {
 			this.initWEB();
@@ -6,7 +6,7 @@ module core.game {
 
 		public initWEB()
 		{
-			let webServer = new core.WSNetService;
+			let webServer = new shao.WSNetService;
 			let param = egret["server"];
 			// egret["server"] = {
 			// 	ip:server.extrenalIP,

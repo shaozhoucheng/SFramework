@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
     export const enum LayoutType {
         /**
          * 垂直——上

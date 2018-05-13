@@ -1,4 +1,4 @@
-module core {
+module shao {
 	/**
 	 * 回调信息，用于存储回调数据
 	 * @author builder

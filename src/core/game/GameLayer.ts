@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
 
     /**
     * GameLayer

@@ -1,4 +1,4 @@
-module core{
+module shao{
     /**
      * 通过H5ExcelTool生成的数据
      * 

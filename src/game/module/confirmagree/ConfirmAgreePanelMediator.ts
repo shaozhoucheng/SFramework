@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
 	export class ConfirmAgreePanelMediator extends mvc.Mediator {
 		constructor() {
 			super(ModuleId.ConfirmAgree);

@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
     /**
      * 用于和服务端通信的数据
      * @author builder

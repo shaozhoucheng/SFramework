@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class ServerSelectPanel extends sui.Panel {
 
         public serverList:eui.List;
@@ -7,9 +7,9 @@ module core.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/ServerSelect/ServerSelectPanel.exml";
+            this.skinName = "resource/ui/panel/serverselect/ServerSelectPanel.exml";
             this._key = "ServerSelect"
-            this._thmName = "resource/ui/skin/ServerSelect/serverselect_thm.json"
+            this._thmName = "resource/ui/skin/serverselect/serverselect_thm.json"
         }
     }
 }

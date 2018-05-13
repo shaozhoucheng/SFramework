@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * 模块脚本，后续开发模块，分成多个模块文件
 	 * @author builder

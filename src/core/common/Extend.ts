@@ -14,7 +14,7 @@ function zeroize(value: number, length: number = 2): string {
 }
 
 
-module core {
+module shao {
     /**
      * 加载脚本
      * @param url
@@ -332,11 +332,11 @@ Object.defineProperties(Array.prototype, {
                         let typea = typeof av;
                         let typeb = typeof bv;
                         if (typea == "object" || typeb == "object") {
-                            core.ThrowError("multiSort value类型不应为object");
+                            shao.ThrowError("multiSort value类型不应为object");
                             return 0;
                         }
                         else if (typea != typeb) {
-                            core.ThrowError("multiSort value类型不一致");
+                            shao.ThrowError("multiSort value类型不一致");
                             return 0;
                         }
                         else if (av < bv) {

@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
     export class Scroller extends egret.EventDispatcher {
 
 

@@ -1,12 +1,12 @@
-module core.game{
+module shao.game{
         
         /*-*begin $area1*-*/
         //这里填写类上方的手写内容
         /*-*end $area1*-*/
     
          /**
-        * 由junyouH5数据生成工具，从F://vsworkspace/LearnGit/TestPython/jsons\GongNeng.json生成
-        * 创建时间：2018-05-11 10:02:20
+        * 由junyouH5数据生成工具，从D://PycharmProjects/TestPython/jsons\GongNeng.json生成
+        * 创建时间：2018-05-14 00:14:31
         **/
          export class GongNengCfg extends mvc.BaseMCfg {
          
@@ -100,8 +100,14 @@ module core.game{
         
         
         
+        
+        
+        
 super.init(local);
 
+        
+        
+        
         
         
         

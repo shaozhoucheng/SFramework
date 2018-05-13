@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * 依赖其他数据的<br/>
 	 * 依赖其他数据的东西，自身一定是异步的

@@ -1,4 +1,4 @@
-module core {
+module shao {
     export const enum ThrowErrorConst {
         /**
          * 存储在内存中的错误数据的最大条目

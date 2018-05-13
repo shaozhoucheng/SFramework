@@ -1,4 +1,4 @@
-module core {
+module shao {
 
     import Bitmap = egret.Bitmap;
     /**

@@ -1,4 +1,4 @@
-module core {
+module shao {
 	export const enum PanelStateDefine {
 		/**
 		 * 地图类型

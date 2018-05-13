@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 *
 	 * @author 

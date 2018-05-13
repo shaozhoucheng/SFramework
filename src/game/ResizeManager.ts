@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class ResizeManager {
         private static _instance: ResizeManager;
 

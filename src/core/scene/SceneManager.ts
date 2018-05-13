@@ -1,4 +1,4 @@
-module core {
+module shao {
     /**
      * Created by yangsong on 2014/11/28.
      * 场景管理类

@@ -1,4 +1,4 @@
-module core {
+module shao {
     export const enum EventConst {
         /*-*begin sideMediator*-*/
         SIDE_MODULE_SHOW,

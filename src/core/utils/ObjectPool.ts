@@ -1,4 +1,4 @@
-module core {
+module shao {
 
 	/**
 	 * 数据缓存池

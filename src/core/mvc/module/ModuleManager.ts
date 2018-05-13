@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
     import DisplayObject = egret.DisplayObject;
 	/**
 	 * 模块管理器

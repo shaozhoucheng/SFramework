@@ -1,4 +1,4 @@
-module core {
+module shao {
 	export class TStatePanel extends eui.Component {
 		public constructor() {
 			super();

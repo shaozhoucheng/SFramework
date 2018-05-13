@@ -1,4 +1,4 @@
-module core {
+module shao {
     /**
      * 资源管理器
      */

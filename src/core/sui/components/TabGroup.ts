@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
     export class TabGroup extends egret.EventDispatcher
     {
         private _list: eui.ToggleButton[];

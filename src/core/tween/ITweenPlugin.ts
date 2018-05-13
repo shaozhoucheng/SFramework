@@ -1,4 +1,4 @@
-module core {
+module shao {
     /**
      * Tween的插件
      * @author builder

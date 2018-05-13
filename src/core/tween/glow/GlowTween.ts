@@ -1,4 +1,4 @@
-module core {
+module shao {
 	export class GlowTween extends Tween {
 
 		private _cyclic:boolean;

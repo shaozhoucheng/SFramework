@@ -1,4 +1,4 @@
-module core {
+module shao {
 	/**
 	 * 配置加载器<br/>
      * 用于预加载数据的解析
@@ -164,10 +164,10 @@ module core {
                 RES.destroyRes("cfgs");
                 delete this.parsers;
                 delete this._plist;
-                mvc.Facade.simpleDispatch(core.EventConst.DATA_LOCATOR);
+                mvc.Facade.simpleDispatch(shao.EventConst.DATA_LOCATOR);
                 Global.setDataParsed();
                 //szc
-                let webServer = new core.WSNetService
+                let webServer = new shao.WSNetService
                 new game.PreRegiest();
             }
         }

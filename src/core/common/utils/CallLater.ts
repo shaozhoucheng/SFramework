@@ -1,4 +1,4 @@
-module core {
+module shao {
     /**
      * 延迟执行
      * @author builder

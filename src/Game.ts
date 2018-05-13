@@ -1,9 +1,9 @@
-module core.game {
+module shao.game {
     export class Game extends egret.DisplayObjectContainer {
         constructor() {
             super();
             egret.ImageLoader.crossOrigin = "anonymous";
-            core.Global.initTick();
+            shao.Global.initTick();
             this.on(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
             RES.setMaxLoadingThread(4);
         }
@@ -71,8 +71,8 @@ module core.game {
 
             // Core.domain = param.domain;
             // Core.loader = param.loader;
-            // mvc.Facade.on(core.NetEvent.WEB_COMPLETE, this.connectHandler, this);
-            // mvc.Facade.on(core.NetEvent.WEB_FAILED, this.failHandler, this);
+            // mvc.Facade.on(shao.NetEvent.WEB_COMPLETE, this.connectHandler, this);
+            // mvc.Facade.on(shao.NetEvent.WEB_FAILED, this.failHandler, this);
             new PreLoader();
         }
 

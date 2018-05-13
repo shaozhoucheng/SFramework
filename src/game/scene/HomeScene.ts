@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class HomeScene extends BaseScene {
         /**
          * 构造函数

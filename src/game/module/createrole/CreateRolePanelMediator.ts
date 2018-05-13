@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
 	export class CreateRolePanelMediator extends mvc.Mediator {
 		constructor() {
 			super(ModuleId.CreateRole);

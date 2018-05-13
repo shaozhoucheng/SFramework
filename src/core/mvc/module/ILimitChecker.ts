@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * 限制检查器的基类
 	 * @author builder

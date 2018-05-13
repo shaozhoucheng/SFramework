@@ -1,14 +1,14 @@
-module core.game {
+module shao.game {
     export class SubtitlesPanel extends sui.Panel {
 
         protected bindComponents() {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/Subtitles/SubtitlesPanel.exml";
+            this.skinName = "resource/ui/panel/subtitles/SubtitlesPanel.exml";
             // this.skinName = "LoginPanel";
             this._key = "Subtitles"
-            this._thmName = "resource/ui/skin/Subtitles/subtitles_thm.json"
+            this._thmName = "resource/ui/skin/subtitles/subtitles_thm.json"
         }
 
         public btn_start: sui.SButton;

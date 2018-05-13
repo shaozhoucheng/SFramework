@@ -1,4 +1,4 @@
-module core.sui{
+module shao.sui{
     export class SButton extends eui.Button {
         public constructor() {
 			super();

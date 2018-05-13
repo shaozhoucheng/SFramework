@@ -21,15 +21,15 @@ function getInterval(time: number) {
  */
 class GTimer2 {
     public tid: number;
-    public map: core.MapDict <Function, any[]>;
+    public map: shao.MapDict <Function, any[]>;
 
     constructor() {
-        this.map = new core.MapDict<Function, any[]>();
+        this.map = new shao.MapDict<Function, any[]>();
     }
 }
 
 
-module core {
+module shao {
     export class TimerUtil {
 
         /**

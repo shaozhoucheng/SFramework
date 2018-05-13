@@ -1,4 +1,4 @@
-module core {
+module shao {
 
     const enum PBType {
         DOUBLE = 1,

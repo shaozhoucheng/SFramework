@@ -4,7 +4,7 @@
  * https://github.com/CreateJS/TweenJS
  * @author builder
  */
-module core {
+module shao {
 
     export class Tween extends egret.EventDispatcher {
 

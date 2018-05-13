@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
     /**
      * 功能配置的基类
      * @author builder

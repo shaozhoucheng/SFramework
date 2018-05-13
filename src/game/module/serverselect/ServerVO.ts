@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class ServerVO {
         public status: number;
         public name: string;

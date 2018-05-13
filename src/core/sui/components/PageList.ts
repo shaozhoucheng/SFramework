@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
 	export class PageList<T, R extends BaseListItemRender<T>> extends egret.Sprite {
 
 		public static ITEM_SELECTED: string = "ITEM_SELECTED";

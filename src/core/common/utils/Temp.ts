@@ -1,4 +1,4 @@
-module core {
+module shao {
 	/**
 	 * 临时对象
 	 * @author ly

@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
 
     export interface BaseListItemRender<T> extends egret.Sprite {
 

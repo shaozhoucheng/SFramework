@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin width="760" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:sui="core.sui.*">
+<e:Skin width="760" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:sui="shao.sui.*">
 	<e:Image x="175.5" y="203" source="login.ad_bg"/>
 	<e:Image source="login.log_bg" x="182.85" y="202"/>
 	<e:ToggleButton id="tab_regist" label="" x="397.67" y="238.67">

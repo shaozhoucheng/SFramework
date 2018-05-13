@@ -27,7 +27,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////
 
-class Main extends core.game.Game {
+class Main extends shao.game.Game {
     public constructor() {
         super();
         // this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);

@@ -1,4 +1,4 @@
-module core {
+module shao {
 	/**
 	 * 方便后续调整
 	 * 加入ProtoBuf的varint支持

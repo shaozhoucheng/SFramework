@@ -1,4 +1,4 @@
-module core {
+module shao {
 
     interface Path {
         path: string,

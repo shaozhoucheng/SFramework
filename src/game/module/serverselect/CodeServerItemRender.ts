@@ -1,4 +1,4 @@
-module core.game {
+module shao.game {
     export class CodeServerItemRender extends eui.Component {
 
         public label_serverStatus: eui.Label;

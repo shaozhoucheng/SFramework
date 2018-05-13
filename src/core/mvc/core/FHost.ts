@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * Mediator和Proxy的基类
 	 * @author builder
@@ -186,7 +186,7 @@ module core.mvc {
 
 
 }
-module core {
+module shao {
     /**
      * 
      * 附加依赖的Proxy

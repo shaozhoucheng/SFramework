@@ -1,4 +1,4 @@
-module core {
+module shao {
     /**
      * 获取一个单例
      * @returns {any}

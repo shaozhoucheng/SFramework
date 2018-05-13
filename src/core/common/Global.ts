@@ -1,4 +1,4 @@
-module core {
+module shao {
 
 	/**
 	 * 动画的全局对象

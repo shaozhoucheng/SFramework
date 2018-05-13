@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * 代码构建类，用于注册代码
 	 * @author builder
@@ -556,6 +556,6 @@ module core.mvc {
     }
 }
 
-module core {
+module shao {
     export var $facade: mvc.Facade;
 }

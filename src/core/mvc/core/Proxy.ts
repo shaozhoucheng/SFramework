@@ -1,4 +1,4 @@
-module core.mvc {
+module shao.mvc {
 	/**
 	 * 用于君游项目数据同步，后台运行<br/>
      * 只有注册和注销，没有awake和sleep

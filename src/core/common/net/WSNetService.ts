@@ -1,4 +1,4 @@
-module core {
+module shao {
     /**
      * WebSocket版本的NetService
      * @author builder

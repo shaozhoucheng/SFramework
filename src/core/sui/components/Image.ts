@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
 	import Event = egret.Event;
 	/**
 	 * 图片

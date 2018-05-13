@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
 	/**
 	 * 模块面板
 	 * @author builder

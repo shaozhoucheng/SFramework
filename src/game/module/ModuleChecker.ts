@@ -1,4 +1,4 @@
-module core.game{
+module shao.game{
     export class ModuleChecker implements mvc.IModuleChecker{
         
         public check(data:any[],showtip:boolean){

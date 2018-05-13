@@ -234,10 +234,10 @@ if (true) {
     $gm.maxNSLogCount = 1000;
     $gm.nsLogs = [];
     $gm.route = (cmd, data) => {
-        core.NetService.getInstance().route(cmd, data);
+        shao.NetService.getInstance().route(cmd, data);
     }
 }
-module core {
+module shao {
 	/**
 	 * 通信服务
 	 * 收发的协议结构：

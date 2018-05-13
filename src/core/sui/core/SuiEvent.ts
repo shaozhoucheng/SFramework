@@ -1,4 +1,4 @@
-module core.sui {
+module shao.sui {
 
     /**
      * SuiEvent 区段 -1000 - -1999
