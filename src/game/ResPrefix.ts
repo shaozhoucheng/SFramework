@@ -65,5 +65,6 @@ module shao.game {
         IM: "im/",
 
         Story: "o/story/",
+        Card: "o/card/",
     };
 }

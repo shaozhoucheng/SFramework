@@ -1,6 +1,7 @@
 {"file":"common.png","frames":{
-"btn_nextpage":{"x":131,"y":106,"w":84,"h":33,"offX":0,"offY":0,"sourceW":84,"sourceH":33},
-"common_background_00":{"x":1,"y":1,"w":128,"h":128,"offX":0,"offY":0,"sourceW":128,"sourceH":128},
-"btn_yes":{"x":131,"y":1,"w":102,"h":33,"offX":0,"offY":0,"sourceW":102,"sourceH":33},
-"btn_quicksend":{"x":131,"y":71,"w":84,"h":33,"offX":0,"offY":0,"sourceW":84,"sourceH":33},
-"btn_no":{"x":131,"y":36,"w":85,"h":33,"offX":0,"offY":0,"sourceW":85,"sourceH":33}}}
+"btn_nextpage":{"x":128,"y":99,"w":84,"h":33,"offX":0,"offY":0,"sourceW":84,"sourceH":33},
+"common_background_00":{"x":0,"y":0,"w":128,"h":128,"offX":0,"offY":0,"sourceW":128,"sourceH":128},
+"btn_no":{"x":128,"y":33,"w":85,"h":33,"offX":0,"offY":0,"sourceW":85,"sourceH":33},
+"btn_yes":{"x":128,"y":0,"w":102,"h":33,"offX":0,"offY":0,"sourceW":102,"sourceH":33},
+"btn_quicksend":{"x":128,"y":66,"w":84,"h":33,"offX":0,"offY":0,"sourceW":84,"sourceH":33},
+"card_bar_hp":{"x":0,"y":132,"w":146,"h":10,"offX":0,"offY":0,"sourceW":146,"sourceH":10}}}

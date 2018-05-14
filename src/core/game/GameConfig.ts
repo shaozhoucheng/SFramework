@@ -59,6 +59,14 @@ module shao.game {
          * @memberOf ResPrefixConstructor
          */
         Story: string;
+
+        /**
+         * 卡片相关
+         * 
+         * @type {string}
+         * @memberOf ResPrefixConstructor
+         */
+        Card: string;
     }
 
 }

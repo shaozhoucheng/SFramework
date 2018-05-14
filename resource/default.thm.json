@@ -1,6 +1,8 @@
 {
 	"skin": [],
 	"autoGenerateExmlsList": false,
-	"exmls": [],
+	"exmls": [
+		"resource/ui/panel/gameui/HPProgressBar.exml"
+	],
 	"path": "resource/default.thm.json"
 }

@@ -1,6 +1,18 @@
 module shao.game {
 
     import Event = egret.TouchEvent;
+
+    export const CPath={
+        bg:"card_background_",
+        chara:"card_chara_",
+        reverse:"card_reverse_",
+        head:"character_still_",
+        army:"class_army_",
+        element:"elements_",
+        rare:"rare_",
+        name:"card_name_",
+    }
+
     /**
      * description
      * @author pb
