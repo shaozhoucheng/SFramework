@@ -9,6 +9,16 @@ module shao.game {
             super.bindComponent();
         }
 
+        public awake() {
+            let render = this.render;
+            render.on(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this)
+        }
+
+        public sleep() {
+            let render = this.render;
+            render.off(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this)
+        }
+
         private onSkinTouch() {
 
         }

@@ -4,11 +4,11 @@
 
 	</e:Group>
 	<e:Group width="216" height="300" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
-		<e:BitmapLabel id="txt_gong" width="32" height="15" x="4" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
-		<e:BitmapLabel id="txt_fang" width="32" height="15" x="37" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
-		<e:BitmapLabel id="txt_su" width="32" height="15" x="69" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
-		<e:BitmapLabel id="txt_de" width="32" height="15" x="102" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
-		<e:BitmapLabel id="txt_ce" width="32" height="15" x="132" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_gong" width="32" height="15" x="7" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_fang" width="32" height="15" x="40" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_su" width="32" height="15" x="72" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_de" width="32" height="15" x="105" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
+		<e:BitmapLabel id="txt_ce" width="32" height="15" x="135" y="260" anchorOffsetX="0" anchorOffsetY="0" font="card_num_param_fnt" text="100" letterSpacing="-3" scaleX="1" scaleY="1"/>
 		<e:ProgressBar id="hpProgress" width="150" height="12" x="19" y="283" anchorOffsetX="0" anchorOffsetY="0" skinName="HPProgressBar" value="1000" maximum="1000"/>
 	</e:Group>
 </e:Skin>

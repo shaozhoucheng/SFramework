@@ -12,5 +12,6 @@ module shao.game {
 
         public txt_talk:eui.Label;
         public btn_next:sui.SButton;
+        public btn_next2:sui.SButton;
     }
 }

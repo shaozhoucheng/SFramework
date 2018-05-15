@@ -17,17 +17,17 @@ module shao.game {
         protected bindComponent() {
             super.bindComponent();
             let im = this.armyImage = new sui.Image;
-            this.addChildAt(im, 0);
-            im.y = 270;
+            this.addChild(im);
+            im.y = 280;
             im = this.paImage = new sui.Image;
             this.addChildAt(im, 0);
-            im.x = 180; im.y = 30
+            im.x = 180; im.y = 10
             im = this.roleImage = new sui.Image;
             this.addChildAt(im, 0);
-            im.x = 20; im.y = 29
+            // im.x = 20; im.y = 29
             im = this.nameImage = new sui.Image;
             this.addChildAt(im, 0);
-            im.x = 180; im.y = 70
+            im.x = 180; im.y = 40
             im = this.rareImage = new sui.Image;
             this.addChildAt(im, 0);
             im = this.bgImage = new sui.Image;

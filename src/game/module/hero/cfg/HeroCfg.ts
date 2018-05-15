@@ -6,7 +6,7 @@ module shao.game{
     
          /**
         * 由junyouH5数据生成工具，从F://vsworkspace/LearnGit/TestPython/jsons\Hero.json生成
-        * 创建时间：2018-05-14 17:04:31
+        * 创建时间：2018-05-15 13:07:17
         **/
          export class HeroCfg {
          
@@ -73,6 +73,7 @@ module shao.game{
          
         /*-*begin $area2*-*/
         
+        
 		//这里填写类里面的手写内容
 
 		public bpropArr: number[]
@@ -86,6 +87,7 @@ module shao.game{
 			})
 		}
 		
+        
         /*-*end $area2*-*/
     
          public decode(data:any[]){
@@ -107,9 +109,11 @@ module shao.game{
              
         /*-*begin $decode*-*/
         
+        
 			//这里填写方法中的手写内容
 			this.decodeBpropArr(this.bproperty)
 			
+        
         /*-*end $decode*-*/
     
             }

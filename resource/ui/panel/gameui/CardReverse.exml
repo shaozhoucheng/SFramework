@@ -8,12 +8,12 @@
 	<e:Label id="txt_totalLevel" text="Lv22" x="8.34" y="92.34" anchorOffsetX="0" width="198.33" anchorOffsetY="0" height="17.67" size="15" border="false" bold="true" textAlign="center" verticalAlign="middle"/>
 	<e:Label id="txt_meritvalue" text="Lv22" x="7.67" y="68.34" anchorOffsetX="0" width="198.33" anchorOffsetY="0" height="17.67" size="15" border="false" bold="true" textAlign="left" verticalAlign="middle"/>
 	<e:Label id="txt_name" text="Lv22" x="28.5" y="8.01" anchorOffsetX="0" width="166.33" anchorOffsetY="0" height="16.33" size="15" border="false" bold="true" textAlign="center" textColor="0x000000"/>
-	<e:Label id="txt_dialogue" text="Lv22" x="17.67" y="31.67" anchorOffsetX="0" width="179.66" anchorOffsetY="0" height="28.34" size="10" border="false" bold="false" textAlign="left" verticalAlign="top" textColor="0x000000"/>
+	<e:Label id="txt_dialogue" text="Lv22" x="17.67" y="32.67" anchorOffsetX="0" width="179.66" anchorOffsetY="0" height="30.34" size="12" border="false" bold="false" textAlign="left" verticalAlign="top" textColor="0x000000"/>
 	<e:Label id="txt_job" text="Lv22" x="132" y="178.34" anchorOffsetX="0" width="76.33" anchorOffsetY="0" height="19.67" size="12" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>
-	<e:Label id="txt_realname" text="Lv22" x="12" y="211" anchorOffsetX="0" width="78" anchorOffsetY="0" height="20" size="12" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>
-	<e:Label id="txt_introduce" text="Lv22" x="10.5" y="236.34" anchorOffsetX="0" width="196.33" anchorOffsetY="0" height="58.34" size="10" border="false" bold="false" textAlign="left" verticalAlign="top" textColor="0x000000"/>
-	<e:Label id="txt_nickname" text="Lv22" x="111.66" y="217" anchorOffsetX="0" width="91.66" anchorOffsetY="0" height="15.01" size="10" border="false" bold="false" textAlign="left" verticalAlign="bottom" textColor="0x000000"/>
+	<e:Label id="txt_realname" text="Lv22" x="12" y="211" anchorOffsetX="0" width="78" anchorOffsetY="0" height="20" size="13" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>
+	<e:Label id="txt_introduce" text="Lv22" x="10.5" y="236.34" anchorOffsetX="0" width="196.33" anchorOffsetY="0" height="58.34" size="12" border="false" bold="false" textAlign="left" verticalAlign="top" textColor="0x000000"/>
+	<e:Label id="txt_nickname" text="Lv22" x="111.66" y="217" anchorOffsetX="0" width="91.66" anchorOffsetY="0" height="15.01" size="12" border="false" bold="false" textAlign="left" verticalAlign="bottom" textColor="0x000000"/>
 	<e:Label id="txt_skillname0" text="Lv22" x="10.67" y="159" anchorOffsetX="0" width="89.33" anchorOffsetY="0" height="15.67" size="10" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>
 	<e:Label id="txt_skillname1" text="Lv22" x="113.99" y="159.33" anchorOffsetX="0" width="90" anchorOffsetY="0" height="14.34" size="10" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>
-	<e:Label id="txt_skillname3" text="Lv22" x="7.67" y="181.01" anchorOffsetX="0" width="90" anchorOffsetY="0" height="14.34" size="10" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>
+	<e:Label id="txt_skillname2" text="Lv22" x="7.67" y="181.01" anchorOffsetX="0" width="90" anchorOffsetY="0" height="14.34" size="10" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>
 </e:Skin>

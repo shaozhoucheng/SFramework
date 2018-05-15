@@ -13,4 +13,12 @@
 			</e:Skin>
 		</sui:skinName>
 	</sui:SButton>
+	<sui:SButton id="btn_next2" label="" x="371" y="620.83">
+		<sui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common.btn_nextpage"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</sui:skinName>
+	</sui:SButton>
 </e:Skin>
