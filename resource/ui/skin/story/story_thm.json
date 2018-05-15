@@ -1,5 +1,5 @@
 {
 	"exmls": [
-    "resource/ui/panel/Story/StoryPanel.exml"
+    "resource/ui/panel/story/StoryPanel.exml"
 	]
 }

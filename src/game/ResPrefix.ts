@@ -66,5 +66,6 @@ module shao.game {
 
         Story: "o/story/",
         Card: "o/card/",
+        PanelBg: "o/panelbg/",
     };
 }

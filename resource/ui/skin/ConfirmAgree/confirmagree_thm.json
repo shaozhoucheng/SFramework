@@ -1,5 +1,5 @@
 {
 	"exmls": [
-    "resource/ui/panel/ConfirmAgree/ConfirmAgreePanel.exml"
+    "resource/ui/panel/confirmagree/ConfirmAgreePanel.exml"
 	]
 }

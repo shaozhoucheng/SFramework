@@ -67,6 +67,14 @@ module shao.game {
          * @memberOf ResPrefixConstructor
          */
         Card: string;
+
+        /**
+         * 面板底层bg
+         * 
+         * @type {string}
+         * @memberOf ResPrefixConstructor
+         */
+        PanelBg: string;
     }
 
 }

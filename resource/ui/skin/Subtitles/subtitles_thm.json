@@ -1,5 +1,5 @@
 {
 	"exmls": [
-    "resource/ui/panel/Subtitles/SubtitlesPanel.exml"
+    "resource/ui/panel/subtitles/SubtitlesPanel.exml"
 	]
 }
