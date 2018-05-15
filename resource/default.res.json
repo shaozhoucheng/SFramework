@@ -61,6 +61,11 @@
 			"url": "remote/i/tmp/card_reverse_01.jpg",
 			"type": "image",
 			"name": "card_reverse_01_jpg"
+		},
+		{
+			"url": "remote/o/panelbg/main_map_upperparts.jpg",
+			"type": "image",
+			"name": "main_map_upperparts_jpg"
 		}
 	]
 }

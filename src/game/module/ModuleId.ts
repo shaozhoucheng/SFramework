@@ -10,5 +10,6 @@
     CreateRole: "CreateRole",
     Subtitles: "Subtitles",
     Story: "Story",
+    Top: "Top",
   }
 }

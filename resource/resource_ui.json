@@ -19,6 +19,10 @@
 		{
 			"keys":"Subtitles",
 			"name":"Subtitles"
+		},
+		{
+			"keys":"top",
+			"name":"Top"
 		}
 	],
 	"resources":[
@@ -51,6 +55,12 @@
 			"subkeys":"btn_game_start,nekogami",
 			"type":"sheet",
 			"url":"ui/skin/Subtitles/Subtitles.json"
+		},
+		{
+			"name":"top",
+			"subkeys":"btn_main_01_swap_part2x1,btn_main_02_part2x1,btn_main_03_part2x1,btn_main_04_part2x1,btn_main_05_part2x1,btn_main_07_part1x1,btn_main_07_part2x1,btn_main_08_part1x1,btn_main_08_part2x1,btn_main_09_part1x1,btn_main_09_part2x1,btn_main_10_part1x1,btn_main_10_part2x1,btn_main_12_part1x1,btn_main_12_part2x1,btn_main_16_part1x1,btn_main_16_part2x1,btn_main_17_part1x1,btn_main_17_part2x1",
+			"type":"sheet",
+			"url":"ui/skin/top/top.json"
 		}
 	]
 }
