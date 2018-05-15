@@ -6,7 +6,7 @@
 	<e:Label id="txt_de" text="Lv22" x="132" y="137" anchorOffsetX="0" width="35" anchorOffsetY="0" height="15" size="15" border="false" bold="true"/>
 	<e:Label id="txt_ce" text="Lv22" x="171" y="137" anchorOffsetX="0" width="35" anchorOffsetY="0" height="15" size="15" border="false" bold="true"/>
 	<e:Label id="txt_totalLevel" text="Lv22" x="8.34" y="92.34" anchorOffsetX="0" width="198.33" anchorOffsetY="0" height="17.67" size="15" border="false" bold="true" textAlign="center" verticalAlign="middle"/>
-	<e:Label id="txt_meritvalue" text="Lv22" x="7.67" y="68.34" anchorOffsetX="0" width="198.33" anchorOffsetY="0" height="17.67" size="15" border="false" bold="true" textAlign="left" verticalAlign="middle"/>
+	<e:Label id="txt_meritvalue" x="7.67" y="68.34" anchorOffsetX="0" width="198.33" anchorOffsetY="0" height="17.67" size="15" border="false" bold="true" textAlign="left" verticalAlign="middle"/>
 	<e:Label id="txt_name" text="Lv22" x="28.5" y="8.01" anchorOffsetX="0" width="166.33" anchorOffsetY="0" height="16.33" size="15" border="false" bold="true" textAlign="center" textColor="0x000000"/>
 	<e:Label id="txt_dialogue" text="Lv22" x="17.67" y="32.67" anchorOffsetX="0" width="179.66" anchorOffsetY="0" height="30.34" size="12" border="false" bold="false" textAlign="left" verticalAlign="top" textColor="0x000000"/>
 	<e:Label id="txt_job" text="Lv22" x="132" y="178.34" anchorOffsetX="0" width="76.33" anchorOffsetY="0" height="19.67" size="12" border="false" bold="false" textAlign="center" verticalAlign="middle" textColor="0x000000"/>

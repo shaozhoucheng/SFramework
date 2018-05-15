@@ -1,11 +1,18 @@
 module shao.sui {
     export class TalkLabel {
-        public constructor(txt: egret.TextField, talk: string, time: number = 300, callback?: Function, target?: any) {
-            this._talk = talk;
+        public constructor(txt: egret.TextField,time: number = 300,target?: any) {
             this._txt = txt;
             this._time = time;
-            this._cb = callback
             this._target = target
+        }
+
+        public set talk(value:string){
+            this._talk = value;
+        }
+
+        public set CompleteFun(value:Function)
+        {
+            this._cb = value;
         }
 
         private _talk: string;
@@ -48,7 +55,7 @@ module shao.sui {
             this._timer.removeEventListener(egret.TimerEvent.TIMER, this.onTimeUpdate, this);
             this._txt.text = "";
             this._cb = null;
-            this._target = null
+            // this._target = null
         }
     }
 }

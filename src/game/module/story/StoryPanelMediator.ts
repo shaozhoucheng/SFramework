@@ -21,7 +21,8 @@ module shao.game {
         private cardBgRender: CardBgItemRender;
         private cardReverseRender: CardReverseItemRender;
 
-        private talks = "闲话少说，我来介绍一下你在这个世界的职责吧。\n在这个游戏中，你自己本身无需战斗。\n而你的职责，一言以蔽之，\n就是收集武将，组成佣兵团“御雇众”，\n惩处山贼、忍者等，\n或与其他御雇众一决胜负，扬名天下。"
+        private talk1 = "闲话少说，我来介绍一下你在这个世界的职责吧。\n在这个游戏中，你自己本身无需战斗。\n而你的职责，一言以蔽之，\n就是收集武将，组成佣兵团“御雇众”，\n惩处山贼、忍者等，\n或与其他御雇众一决胜负，扬名天下。"
+        private talk2 = "首先就以这5个人来战斗吧。\n当然，有新伙伴加入时，\n努力雇佣、培养，\n创建更强的佣兵团吧！"
 
         private step: number = 0;
 
@@ -31,7 +32,7 @@ module shao.game {
             let t = this.teacher = new sui.Image;
             view.addChild(t)
             t.x = 32; t.y = 200;
-            this.talkLabel = new sui.TalkLabel(view.txt_talk, this.talks, 50, this.onTalkComplete, this);
+            this.talkLabel = new sui.TalkLabel(view.txt_talk, 50, this);
             let list = this.headList = new sui.PageList<number, StoryHeroRender>(StoryHeroRender, 90, 90, false)
             view.addChild(list);
             list.moveTo(250, 200)
@@ -66,8 +67,24 @@ module shao.game {
         }
 
         private onNext2BtnTouch(e?: egret.TouchEvent) {
-
+            this.step++;
+            let view = this.$view;
+            if (this.step == 2) {
+                this.headList.dispose();
+                this.cardBgRender.visible = false;
+                this.cardReverseRender.visible = false;
+                view.btn_next2.visible = false;
+                this.talkLabel.talk = this.talk2;
+                this.talkLabel.CompleteFun = this.onTalk2Complete
+                this.talkLabel.playTalk()
+            }
         }
+
+        private onTalk2Complete() {
+            let view = this.$view;
+            view.btn_next.visible = true;
+        }
+
 
         private onTalkComplete() {
             let view = this.$view;
@@ -75,6 +92,8 @@ module shao.game {
         }
 
         public showTalk() {
+            this.talkLabel.talk = this.talk1;
+            this.talkLabel.CompleteFun = this.onTalkComplete;
             this.talkLabel.playTalk()
         }
 
