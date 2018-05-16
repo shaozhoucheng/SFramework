@@ -66,6 +66,16 @@
 			"url": "remote/o/panelbg/main_map_lowerparts.png",
 			"type": "image",
 			"name": "main_map_lowerparts_png"
+		},
+		{
+			"url": "remote/o/building/institution_000.png",
+			"type": "image",
+			"name": "institution_000_png"
+		},
+		{
+			"url": "remote/o/building/institution_001.png",
+			"type": "image",
+			"name": "institution_001_png"
 		}
 	]
 }
