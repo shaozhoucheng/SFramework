@@ -39,7 +39,7 @@ module shao.game {
         }
 
         private onStartBtnTouch(evt: egret.TouchEvent) {
-            let newPlayer = true;
+            let newPlayer = false;
             if (newPlayer) {
                 getInstance(SceneManager).runScene(SceneConst.Story)
             } else {

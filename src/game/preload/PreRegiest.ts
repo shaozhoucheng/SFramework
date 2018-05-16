@@ -13,6 +13,7 @@ module shao.game {
             facade.registerInlineMediator(CreateRolePanelMediator, ModuleId.CreateRole)
             facade.registerInlineMediator(SubtitlesPanelMediator, ModuleId.Subtitles)
             facade.registerInlineMediator(StoryPanelMediator, ModuleId.Story)
+            facade.registerInlineMediator(TopPanelMediator, ModuleId.Top)
 
             //注册服务
             // facade.registerInlineProxy(LoginService,ServiceName.LoginService);

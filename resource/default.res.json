@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base,card_num_param_fnt,card_num_param_png,card_reverse_01_jpg",
+			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base,card_num_param_fnt,card_num_param_png",
 			"name": "preload"
 		}
 	],
@@ -63,9 +63,9 @@
 			"name": "card_reverse_01_jpg"
 		},
 		{
-			"url": "remote/o/panelbg/main_map_upperparts.jpg",
+			"url": "remote/o/panelbg/main_map_lowerparts.png",
 			"type": "image",
-			"name": "main_map_upperparts_jpg"
+			"name": "main_map_lowerparts_png"
 		}
 	]
 }

@@ -1,28 +1,24 @@
-module shao.sui 
-{
-	export class TouchUtil 
-	{
+module shao.sui {
+	export class TouchUtil {
 		private _enabled: boolean = false;
 		private target: egret.DisplayObject;
 		private startx;
 		private starty;
 		private isTouchBegin: boolean = false;
 
-		public constructor( target: egret.DisplayObject ) 
-		{
+		public constructor(target: egret.DisplayObject) {
 			this.target = target;
 			this.recordStartXY();
-			if ( "touchChildren" in target ) {
+			if ("touchChildren" in target) {
 				target["touchChildren"] = false;
 			}
 		}
 
-		public dispose()
-		{
+		public dispose() {
 			let t = this.target;
-			if ( t ) {
+			if (t) {
 				let type = egret.Event.ADDED_TO_STAGE;
-				if ( t.hasEventListener(type)) {
+				if (t.hasEventListener(type)) {
 					t.removeEventListener(type, this.targetAddedToParent, this);
 				}
 				t = undefined;
@@ -31,40 +27,36 @@ module shao.sui
 			}
 		}
 
-		public set enabled( value: boolean )
-		{
-			if ( value != this._enabled ) {
+		public set enabled(value: boolean) {
+			if (value != this._enabled) {
 				let t = this.target;
-				if ( t ) {
+				if (t) {
 					let type = egret.TouchEvent.TOUCH_BEGIN;
 					t.touchEnabled = value;
-					if ( value ) t.addEventListener(type, this.touchBegin, this );
-					else t.removeEventListener(type, this.touchBegin, this );
+					if (value) t.addEventListener(type, this.touchBegin, this);
+					else t.removeEventListener(type, this.touchBegin, this);
 				}
 				this._enabled = value;
 			}
 		}
 
-		public recordStartXY()
-		{
+		public recordStartXY() {
 			let t = this.target;
-			if ( t ) {
+			if (t) {
 				let p = t.stage;
-				if ( p ) this.enabled = t.touchEnabled;
+				if (p) this.enabled = t.touchEnabled;
 				else t.addEventListener(egret.Event.ADDED_TO_STAGE, this.targetAddedToParent, this);
 			}
 		}
 
-		protected targetAddedToParent( event: egret.Event )
-		{
+		protected targetAddedToParent(event: egret.Event) {
 			let t = event.currentTarget as egret.DisplayObject;
 			t.removeEventListener(egret.Event.ADDED_TO_STAGE, this.targetAddedToParent, this);
 			this.recordStartXY();
 		}
 
-		protected touchBegin( event: egret.TouchEvent )
-		{
-			if ( this.isTouchBegin ) this.touchEnd(null);
+		protected touchBegin(event: egret.TouchEvent) {
+			if (this.isTouchBegin) this.touchEnd(null);
 
 			this.isTouchBegin = true;
 
@@ -89,8 +81,7 @@ module shao.sui
 			t.y = sy - sh * 0.05;
 		}
 
-		protected touchEnd( event: egret.TouchEvent )
-		{
+		protected touchEnd(event: egret.TouchEvent) {
 			let t = this.target;
 			let st = egret.sys.$TempStage;
 			st.removeEventListener(egret.TouchEvent.TOUCH_END, this.touchEnd, this);
@@ -104,9 +95,8 @@ module shao.sui
 			this.isTouchBegin = false;
 		}
 
-		protected touchLeaveStage( event: egret.TouchEvent )
-		{
-			this.touchEnd( event );
+		protected touchLeaveStage(event: egret.TouchEvent) {
+			this.touchEnd(event);
 		}
 
 	}

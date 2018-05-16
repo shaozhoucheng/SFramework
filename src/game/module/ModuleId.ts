@@ -11,5 +11,6 @@
     Subtitles: "Subtitles",
     Story: "Story",
     Top: "Top",
+    Home: "Home",
   }
 }

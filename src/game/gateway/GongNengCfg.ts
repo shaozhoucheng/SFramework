@@ -5,8 +5,8 @@ module shao.game{
         /*-*end $area1*-*/
     
          /**
-        * 由junyouH5数据生成工具，从D://PycharmProjects/TestPython/jsons\GongNeng.json生成
-        * 创建时间：2018-05-14 00:14:31
+        * 由junyouH5数据生成工具，从F://vsworkspace/LearnGit/TestPython/jsons\GongNeng.json生成
+        * 创建时间：2018-05-16 10:14:50
         **/
          export class GongNengCfg extends mvc.BaseMCfg {
          
@@ -103,8 +103,10 @@ module shao.game{
         
         
         
+        
 super.init(local);
 
+        
         
         
         

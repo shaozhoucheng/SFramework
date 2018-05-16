@@ -7,7 +7,7 @@ module shao.game {
 
         constructor() {
             super();
-            this.skinName = "resource/ui/panel/ServerSelect/ServerItemRender.exml";
+            this.skinName = "resource/ui/panel/serverselect/ServerItemRender.exml";
         }
 
         protected createChildren(): void {

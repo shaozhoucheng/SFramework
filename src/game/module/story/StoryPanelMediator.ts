@@ -63,6 +63,8 @@ module shao.game {
                 this.headList.displayList([171, 61, 128, 155, 84])
                 view.btn_next.visible = false;
                 view.btn_next2.visible = true;
+            } else if (this.step == 3) {
+                getInstance(SceneManager).runScene(SceneConst.Home);
             }
         }
 
@@ -111,7 +113,6 @@ module shao.game {
             let view = this.$view;
             view.btn_next.looseTouch(this.onNextBtnTouch, this);
             view.btn_next2.looseTouch(this.onNext2BtnTouch, this);
-
         }
     }
 }
