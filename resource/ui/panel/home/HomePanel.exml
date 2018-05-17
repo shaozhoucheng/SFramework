@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin width="760" height="653" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image source="main_map_lowerparts_png" x="0" y="0"/>
+	<e:Image source="main_map_lowerparts_png" x="0" y="0" visible="false"/>
 	<e:Rect id="rect0" width="22" height="15" x="421" y="49" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Rect id="rect1" width="22" height="15" x="246" y="84" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Rect id="rect2" width="22" height="15" x="295" y="108" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>

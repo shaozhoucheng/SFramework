@@ -95,8 +95,10 @@ module shao.sui {
             //         this.addChildAt(this._skin, 0);
             //     }
             // }
-            if (!this.contains(this._skin)) {
-                this.addChildAt(this._skin, 0);
+            if (this._skin) {
+                if (!this.contains(this._skin)) {
+                    this.addChildAt(this._skin, 0);
+                }
             }
         }
 

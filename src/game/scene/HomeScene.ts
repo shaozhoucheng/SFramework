@@ -13,7 +13,7 @@ module shao.game {
         public onEnter(): void {
             super.onEnter();
             $facade.toggle(ModuleId.Top);
-            // $facade.toggle(ModuleId.Home);
+            $facade.toggle(ModuleId.Home);
         }
 
         /**

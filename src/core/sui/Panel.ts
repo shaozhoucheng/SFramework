@@ -134,7 +134,7 @@ module shao.sui {
             // this.skinDataComplete();
         }
 
-        private thmDataComplete(e: any) {
+        private thmDataComplete(e?: any) {
             if (!this._key) {
                 this.loadSkin = true
                 this.skinDataComplete();

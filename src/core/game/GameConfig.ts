@@ -74,7 +74,15 @@ module shao.game {
          * @type {string}
          * @memberOf ResPrefixConstructor
          */
-        PanelBg: string;
+        PanelBg: string; 
+        
+        /**
+         * 建筑相关
+         * 
+         * @type {string}
+         * @memberOf ResPrefixConstructor
+         */
+        Building: string;
     }
 
 }
