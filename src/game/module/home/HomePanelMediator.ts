@@ -21,15 +21,32 @@ module shao.game {
             bg.source = game.ResPrefix.PanelBg + $appendPNG("main_map_lowerparts")
 
             let mlist = this.mlist = new sui.MPageList<BuildVO, BuildItemRender>();
-            this.testList = []
-            for (let i = 0; i <= 26; i++) {
+            for (let i = 0; i <= 25; i++) {
                 let rect = view["rect" + i];
                 let buildrender = new BuildItemRender;
                 buildrender.x = rect.x;
                 buildrender.y = rect.y;
                 view.addChild(buildrender);
                 mlist.addItem(buildrender)
-                this.testList.push(null);
+            }
+            this.initVOs()
+        }
+
+        private initVOs() {
+            this.testList = []
+            for (let i = 0; i <= 25; i++) {
+                let vo = new BuildVO;
+                vo.slot = i;
+                vo.status = 0;
+                if (i == 0) {
+                    vo.bid = 12
+                }
+                else if (i == 4 || i == 9 || i == 15 || i == 20) {
+                    vo.bid = 15
+                } else {
+                    vo.bid = 11
+                }
+                this.testList.push(vo)
             }
         }
 

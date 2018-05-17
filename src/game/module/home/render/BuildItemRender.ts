@@ -40,8 +40,9 @@ module shao.game {
 
         public setData(value: BuildVO) {
             super.setData(value);
-            // if (!value) return;
-            this.build.source = game.ResPrefix.Building + $appendPNG("institution_000.png");
+            if (!value) return;
+            let cfg = getInstance(JianZhuDB).getCfgById(value.bid);
+            this.build.source = game.ResPrefix.Building + $appendPNG(cfg.icon);
         }
     }
 }

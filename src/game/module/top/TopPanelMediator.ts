@@ -29,13 +29,13 @@ module shao.game {
 
         private onRankBtnTouch() {
             let view = this.$view;
-            this.hideGroup();
+            view.group_hero.visible = false;
             view.group_rank.visible = !view.group_rank.visible
         }
 
         private onHeroBtnTouch() {
             let view = this.$view;
-            this.hideGroup();
+            view.group_rank.visible = false;
             view.group_hero.visible = !view.group_hero.visible
         }
 

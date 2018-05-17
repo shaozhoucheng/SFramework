@@ -15,17 +15,17 @@
 	<e:Rect id="rect11" width="22" height="15" x="198" y="156" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Rect id="rect12" width="22" height="15" x="246" y="180" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Rect id="rect13" width="22" height="15" x="294" y="204" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect14" width="22" height="15" x="294" y="204" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect15" width="22" height="15" x="342" y="228" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect16" width="22" height="15" x="102" y="156" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect17" width="22" height="15" x="150" y="180" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect18" width="22" height="15" x="198" y="204" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect19" width="22" height="15" x="246" y="228" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect20" width="22" height="15" x="294" y="252" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect21" width="22" height="15" x="102" y="204" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect22" width="22" height="15" x="150" y="228" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect23" width="22" height="15" x="198" y="252" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect24" width="22" height="15" x="246" y="279" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect25" width="22" height="15" x="80" y="262" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect id="rect26" width="22" height="15" x="128" y="290" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+
+	<e:Rect id="rect14" width="22" height="15" x="342" y="228" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect15" width="22" height="15" x="102" y="156" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect16" width="22" height="15" x="150" y="180" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect17" width="22" height="15" x="198" y="204" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect18" width="22" height="15" x="246" y="228" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect19" width="22" height="15" x="294" y="252" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect20" width="22" height="15" x="102" y="204" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect21" width="22" height="15" x="150" y="228" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect22" width="22" height="15" x="198" y="252" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect23" width="22" height="15" x="246" y="279" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect24" width="22" height="15" x="80" y="262" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect id="rect25" width="22" height="15" x="128" y="290" fillAlpha="0" anchorOffsetX="0" anchorOffsetY="0"/>
 </e:Skin>
