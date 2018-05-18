@@ -23,6 +23,10 @@
 		{
 			"keys":"top",
 			"name":"Top"
+		},
+		{
+			"keys":"build",
+			"name":"Build"
 		}
 	],
 	"resources":[
@@ -61,6 +65,12 @@
 			"subkeys":"btn_main_01_swap_part2x1,btn_main_02_part2x1,btn_main_03_part2x1,btn_main_04_part2x1,btn_main_05_part2x1,btn_main_07_part1x1,btn_main_08_part1x1,btn_main_09_part1x1,btn_main_09_part2x1,btn_main_10_part1x1,btn_main_12_part1x1,btn_main_16_part1x1,btn_main_17_part1x1",
 			"type":"sheet",
 			"url":"ui/skin/top/top.json"
+		},
+		{
+			"name":"build",
+			"subkeys":"btn_close,btn_construction",
+			"type":"sheet",
+			"url":"ui/skin/build/build.json"
 		}
 	]
 }

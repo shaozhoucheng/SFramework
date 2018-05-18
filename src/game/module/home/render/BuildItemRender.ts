@@ -35,7 +35,18 @@ module shao.game {
 
         private onSkinTouch() {
             // console.log("click")
-            
+            let data = this._data;
+            let cfg = getInstance(JianZhuDB).getCfgById(data.bid)
+            if (cfg.type == 11) {//build
+                $facade.toggle(ModuleId.Build, 1);
+            } else if (cfg.type == 13) {
+
+            } else if (cfg.type == 14) {
+
+            } else if (cfg.type == 13) {
+
+            }
+
         }
 
         public setData(value: BuildVO) {

@@ -12,5 +12,7 @@
     Story: "Story",
     Top: "Top",
     Home: "Home",
+    Build: "Build",
+    BuildDetail: "BuildDetail",
   }
 }

@@ -15,6 +15,7 @@ module shao.game {
             facade.registerInlineMediator(StoryPanelMediator, ModuleId.Story)
             facade.registerInlineMediator(TopPanelMediator, ModuleId.Top)
             facade.registerInlineMediator(HomePanelMediator, ModuleId.Home)
+            facade.registerInlineMediator(BuildPanelMediator, ModuleId.Build)
 
             //注册服务
             // facade.registerInlineProxy(LoginService,ServiceName.LoginService);
