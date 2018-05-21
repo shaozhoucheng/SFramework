@@ -146,7 +146,8 @@ module shao.sui {
             }
         }
 
-        private skinDataComplete(e?: any) {
+        private skinDataComplete(e?: RES.ResourceEvent) {
+            if (this._key && e.groupName != this._key) return;
             RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.skinDataComplete, this);
             this.exmlDataComplete();
             // EXML.load(this.skinName, this.exmlDataComplete, this)

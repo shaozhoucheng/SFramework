@@ -3,6 +3,6 @@ module shao.game {
         public slot:number;
         public bid:number;
         public status:number;
-        // public level:number;
+        public level:number;
     }
 }

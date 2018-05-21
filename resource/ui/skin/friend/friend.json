@@ -1,0 +1,5 @@
+{"file":"friend.png","frames":{
+"friendlist_background":{"x":1,"y":1,"w":178,"h":245,"offX":0,"offY":0,"sourceW":178,"sourceH":245},
+"village_background_01":{"x":1,"y":248,"w":178,"h":54,"offX":0,"offY":0,"sourceW":178,"sourceH":54},
+"btn_friend_list_0":{"x":219,"y":1,"w":36,"h":29,"offX":0,"offY":0,"sourceW":36,"sourceH":29},
+"btn_friend_list_1":{"x":181,"y":1,"w":36,"h":29,"offX":0,"offY":0,"sourceW":36,"sourceH":29}}}

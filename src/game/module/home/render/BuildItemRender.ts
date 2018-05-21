@@ -18,6 +18,8 @@ module shao.game {
 
         private build: sui.Image
 
+        private ani: game.AniRender;
+
         // private onReleaseTouch() {
         //     console.log("release")
         //     this.scaleX = this.scaleY = 1
@@ -29,6 +31,8 @@ module shao.game {
         // }
 
         private onEndTouch(evt: egret.TouchEvent) {
+            let target: egret.IEventDispatcher = evt.target as egret.IEventDispatcher;
+            if (target == this.build) return;
             console.log("end " + evt.currentTarget.parent.index)
             this.scaleX = this.scaleY = 1
         }
@@ -45,6 +49,9 @@ module shao.game {
 
             } else if (cfg.type == 13) {
 
+            } else {
+                // $facade.toggle(ModuleId.BuildDetail, 1);
+                $facade.executeMediator(ModuleId.BuildDetail, false, "setData", true, null, data)
             }
 
         }
@@ -54,6 +61,22 @@ module shao.game {
             if (!value) return;
             let cfg = getInstance(JianZhuDB).getCfgById(value.bid);
             this.build.source = game.ResPrefix.Building + $appendPNG(cfg.icon);
+            let ani = this.ani;
+            if (ani) {
+                ani.displaymc.off(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this);
+                ani.onRecycle()
+                ani = undefined;
+            }
+            if (value.status == 1) {
+                ani = this.ani = AniRender.getAni("Building");
+                ani.frameRate = 12;
+                ani.play();
+                let display = ani.displaymc;
+                display.touchEnabled = true;
+                this.addChild(display);
+                ani.displaymc.on(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this);
+            }
+            this.build.visible = value.status == 0;
         }
     }
 }

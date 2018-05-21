@@ -14,6 +14,7 @@ module shao.game {
             super.onEnter();
             $facade.toggle(ModuleId.Top);
             $facade.toggle(ModuleId.Home);
+            $facade.toggle(ModuleId.Friend);
         }
 
         /**

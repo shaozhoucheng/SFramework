@@ -30,7 +30,7 @@
 			"url": "ui/skin/Common/common.json",
 			"type": "sheet",
 			"name": "common",
-			"subkeys": "btn_nextpage,btn_no,btn_quicksend,btn_yes,card_bar_hp,common_background_00,close_icon"
+			"subkeys": "btn_nextpage,btn_no,btn_quicksend,btn_yes,card_bar_hp,common_background_00,close_icon,btn_close2"
 		},
 		{
 			"url": "remote/i/tmp/main_map_upperparts.png",

@@ -34,7 +34,7 @@ module shao.game {
 
         public displaymc: egret.MovieClip;
 
-        public frameRate:number;
+        public frameRate: number;
 
         /**
          * MovieClip资源加载类
@@ -96,8 +96,7 @@ module shao.game {
             this.state = AniPlayState.Playing;
             if (display.movieClipData) {
                 display.play(playTimes);
-                if(this.frameRate)
-                {
+                if (this.frameRate) {
                     display.frameRate = this.frameRate;
                 }
             }
@@ -118,6 +117,7 @@ module shao.game {
             this.state = AniPlayState.Recycled;
             let display = this.displaymc;
             if (display) {
+                display.touchEnabled = false;
                 display.movieClipData = undefined;
                 removeDisplay(display);
             }
