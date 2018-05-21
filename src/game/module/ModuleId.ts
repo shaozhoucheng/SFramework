@@ -14,5 +14,6 @@
     Home: "Home",
     Build: "Build",
     BuildDetail: "BuildDetail",
+    Friend: "Friend",
   }
 }

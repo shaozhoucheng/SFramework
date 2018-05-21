@@ -43,7 +43,18 @@ module shao.game {
                 }
                 else if (i == 4 || i == 9 || i == 15 || i == 20) {
                     vo.bid = 15
-                } else {
+                } else if (i == 24) {
+                    vo.bid = 13
+                } else if (i == 25) {
+                    vo.bid = 14
+                } else if (i == 1) {
+                    vo.bid = 1
+                    vo.level = 8;
+                } else if (i == 2) {
+                    vo.bid = 1
+                    vo.level = 8;
+                    vo.status = 1
+                }else {
                     vo.bid = 11
                 }
                 this.testList.push(vo)

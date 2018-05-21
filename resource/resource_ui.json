@@ -27,6 +27,14 @@
 		{
 			"keys":"build",
 			"name":"Build"
+		},
+		{
+			"keys":"builddetail",
+			"name":"BuildDetail"
+		},
+		{
+			"keys":"friend",
+			"name":"Friend"
 		}
 	],
 	"resources":[
@@ -71,6 +79,18 @@
 			"subkeys":"btn_close,btn_construction",
 			"type":"sheet",
 			"url":"ui/skin/build/build.json"
+		},
+		{
+			"name":"builddetail",
+			"subkeys":"btn_enlarge,btn_remove",
+			"type":"sheet",
+			"url":"ui/skin/builddetail/builddetail.json"
+		},
+		{
+			"name":"friend",
+			"subkeys":"btn_friend_list_0,btn_friend_list_1,friendlist_background,village_background_01",
+			"type":"sheet",
+			"url":"ui/skin/friend/friend.json"
 		}
 	]
 }

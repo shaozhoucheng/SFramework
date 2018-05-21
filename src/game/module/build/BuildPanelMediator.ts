@@ -36,29 +36,28 @@ module shao.game {
 			let view = this.$view;
 			view.buildname.text = cfg.name;
 			view.builddes.text = cfg.des;
-			view.buildtime.text = DateUtils.getCountdown(cfg.timeArr[0]*1000, { h: "{0}:", m: "{0}:", s: "{0}" })
+			view.buildtime.text = DateUtils.getCountdown(cfg.timeArr[0] * 1000, { h: "{0}:", m: "{0}:", s: "{0}" })
 		}
 
 		private showBuildList() {
 			this.blist.displayList(getInstance(JianZhuDB).getCanBuildCfgs());
 		}
 
-		private onQuitBtnTouch()
-		{
+		private onQuitBtnTouch() {
 			this.$view.hide();
 		}
 
 		public awake() {
 			let view = this.$view;
 			this.showBuildList();
-			view.btn_quit.bindTouch(this.onQuitBtnTouch,this);
+			view.btn_quit.bindTouch(this.onQuitBtnTouch, this);
 		}
 
 
 
 		public sleep() {
 			let view = this.$view;
-			view.btn_quit.looseTouch(this.onQuitBtnTouch,this);
+			view.btn_quit.looseTouch(this.onQuitBtnTouch, this);
 		}
 	}
 }
