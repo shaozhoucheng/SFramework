@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin width="400" height="300" xmlns:e="http://ns.egret.com/eui">
-	<e:ProgressBar width="80" height="16" x="100" y="194" skinName="HP2ProgressBar" maximum="1000" value="300"/>
-</e:Skin>

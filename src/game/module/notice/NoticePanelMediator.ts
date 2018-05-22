@@ -34,7 +34,7 @@ module shao.game {
             display.x = 235;
             display.y = 350;
             view.addChild(display);
-            display.touchEnabled= true;
+            display.touchEnabled = true;
             display.on(egret.TouchEvent.TOUCH_TAP, this.onStartBtnTouch, this)
         }
 

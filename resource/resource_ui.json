@@ -35,6 +35,10 @@
 		{
 			"keys":"friend",
 			"name":"Friend"
+		},
+		{
+			"keys":"hero",
+			"name":"Hero"
 		}
 	],
 	"resources":[
@@ -91,6 +95,12 @@
 			"subkeys":"btn_friend_list_0,btn_friend_list_1,friendlist_background,village_background_01",
 			"type":"sheet",
 			"url":"ui/skin/friend/friend.json"
+		},
+		{
+			"name":"hero",
+			"subkeys":"common_background_01,tab_common_01_01_a,tab_common_01_01_b,tab_common_01_02_a,tab_common_01_02_b,tab_common_01_03_a,tab_common_01_03_b,tab_common_01_04_a,tab_common_01_04_b",
+			"type":"sheet",
+			"url":"ui/skin/hero/hero.json"
 		}
 	]
 }

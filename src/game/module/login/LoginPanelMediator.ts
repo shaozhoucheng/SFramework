@@ -13,6 +13,8 @@ module shao.game {
 			//这里加事件关注
 		}
 
+		
+
 		protected afterAllReady() {
 			let view = this.$view;
 			let group = this.group = new sui.TabGroup();

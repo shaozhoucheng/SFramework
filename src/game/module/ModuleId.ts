@@ -15,5 +15,6 @@
     Build: "Build",
     BuildDetail: "BuildDetail",
     Friend: "Friend",
+    Hero: "Hero",
   }
 }
