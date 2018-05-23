@@ -12,7 +12,7 @@ module shao.game {
             this.addChild(im)
             im.on(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this);
             // im.on(egret.TouchEvent.TOUCH_BEGIN, this.onBeginTouch, this);
-            im.on(egret.TouchEvent.TOUCH_END, this.onEndTouch, this);
+            // im.on(egret.TouchEvent.TOUCH_END, this.onEndTouch, this);
             // im.on(egret.TouchEvent.TOUCH_RELEASE_OUTSIDE, this.onReleaseTouch, this);
         }
 
@@ -62,6 +62,7 @@ module shao.game {
             let cfg = getInstance(JianZhuDB).getCfgById(value.bid);
             this.build.source = game.ResPrefix.Building + $appendPNG(cfg.icon);
             let ani = this.ani;
+            this.build.visible = true;
             if (ani) {
                 ani.displaymc.off(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this);
                 ani.onRecycle()
@@ -74,9 +75,20 @@ module shao.game {
                 let display = ani.displaymc;
                 display.touchEnabled = true;
                 this.addChild(display);
-                ani.displaymc.on(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this);
+                ani.displaymc.on(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this); 
+                this.build.visible = false;
             }
-            this.build.visible = value.status == 0;
+            if (value.status == 2) {
+                if (value.bid >= 4 && value.bid <= 8) {
+                    ani = this.ani = AniRender.getAni("institution_running");
+                    ani.frameRate = 6;
+                    ani.play();
+                    let display = ani.displaymc;
+                    display.touchEnabled = true;
+                    this.addChildAt(display, 0);
+                    ani.displaymc.on(egret.TouchEvent.TOUCH_TAP, this.onSkinTouch, this);
+                }
+            }
         }
     }
 }

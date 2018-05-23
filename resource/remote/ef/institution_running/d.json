@@ -1,0 +1,24 @@
+{"mc":{
+	"institution_running":{
+		"frameRate":24,
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"1004B7BB",
+			"x":6,
+			"y":1
+			},
+			{
+			"res":"C3E9BD5E",
+			"x":1,
+			"y":5
+			}
+			]
+}},
+	"res":{
+		"1004B7BB":{"x":1,"y":41,"w":72,"h":41},
+		"C3E9BD5E":{"x":1,"y":1,"w":83,"h":38}
+	}}

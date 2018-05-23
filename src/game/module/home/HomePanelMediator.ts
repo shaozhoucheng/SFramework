@@ -54,7 +54,12 @@ module shao.game {
                     vo.bid = 1
                     vo.level = 8;
                     vo.status = 1
-                }else {
+                } else if (i == 3) {
+                    vo.bid = 4
+                    vo.level = 8;
+                    vo.status = 0
+                }
+                else {
                     vo.bid = 11
                 }
                 this.testList.push(vo)
