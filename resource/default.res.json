@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base,card_num_param_fnt,card_num_param_png,win_common_00_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base,card_num_param_fnt,card_num_param_png,win_common_00_png,game",
 			"name": "preload"
 		}
 	],
@@ -30,7 +30,7 @@
 			"url": "ui/skin/Common/common.json",
 			"type": "sheet",
 			"name": "common",
-			"subkeys": "btn_nextpage,btn_no,btn_quicksend,btn_yes,card_bar_hp,common_background_00,close_icon,btn_close2,btl_hp_bar,btl_hp_base"
+			"subkeys": "btl_hp_bar,btl_hp_base,btn_close2,btn_nextpage,btn_no,btn_quicksend,btn_yes,card_bar_hp,close_icon,common_background_00"
 		},
 		{
 			"url": "remote/i/tmp/main_map_upperparts.png",
@@ -82,6 +82,11 @@
 			"type": "image",
 			"name": "win_common_00_png",
 			"scale9grid": "6,28,52,31"
+		},
+		{
+			"url": "remote/data/game.json",
+			"type": "json",
+			"name": "game"
 		}
 	]
 }

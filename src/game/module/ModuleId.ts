@@ -16,5 +16,6 @@
     BuildDetail: "BuildDetail",
     Friend: "Friend",
     Hero: "Hero",
+    Map: "Map",
   }
 }

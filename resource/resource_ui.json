@@ -2,22 +2,22 @@
 	"groups":[
 		{
 			"keys":"login",
-			"name":"Login"
+			"name":"login"
 		},
 		{
-			"keys":"ServerSelect",
+			"keys":"serverselect",
 			"name":"ServerSelect"
 		},
 		{
-			"keys":"ConfirmAgree",
+			"keys":"confirmagree",
 			"name":"ConfirmAgree"
 		},
 		{
-			"keys":"CreateRole",
+			"keys":"createrole",
 			"name":"CreateRole"
 		},
 		{
-			"keys":"Subtitles",
+			"keys":"subtitles",
 			"name":"Subtitles"
 		},
 		{
@@ -39,6 +39,10 @@
 		{
 			"keys":"hero",
 			"name":"Hero"
+		},
+		{
+			"keys":"map",
+			"name":"Map"
 		}
 	],
 	"resources":[
@@ -49,28 +53,28 @@
 			"url":"ui/skin/login/login.json"
 		},
 		{
-			"name":"ServerSelect",
+			"name":"serverselect",
 			"subkeys":"bg,listItemBkgd",
 			"type":"sheet",
-			"url":"ui/skin/serverselect/ServerSelect.json"
+			"url":"ui/skin/serverselect/serverselect.json"
 		},
 		{
-			"name":"ConfirmAgree",
+			"name":"confirmagree",
 			"subkeys":"btn_agree_gamestart",
 			"type":"sheet",
-			"url":"ui/skin/confirmagree/ConfirmAgree.json"
+			"url":"ui/skin/confirmagree/confirmagree.json"
 		},
 		{
-			"name":"CreateRole",
+			"name":"createrole",
 			"subkeys":"friendship_daimyo_01_0,friendship_daimyo_01_6,friendship_daimyo_02_0,friendship_daimyo_02_6,friendship_daimyo_03_0,friendship_daimyo_03_6,friendship_daimyo_04_0,friendship_daimyo_04_6,friendship_daimyo_05_0,friendship_daimyo_05_6,friendship_daimyo_06_0,friendship_daimyo_06_6,friendship_daimyo_07_0,friendship_daimyo_07_6,friendship_daimyo_08_0,friendship_daimyo_08_6,friendship_daimyo_09_0,friendship_daimyo_09_6,friendship_daimyo_10_0,friendship_daimyo_10_6,friendship_daimyo_11_0,friendship_daimyo_11_6,friendship_daimyo_12_0,friendship_daimyo_12_6,friendship_daimyo_13_0,friendship_daimyo_13_6,friendship_daimyo_14_0,friendship_daimyo_14_6,friendship_daimyo_15_0,friendship_daimyo_15_6,friendship_daimyo_16_0,friendship_daimyo_16_6,friendship_nyamon_01,friendship_nyamon_02,friendship_nyamon_03,friendship_nyamon_04,friendship_nyamon_05,friendship_nyamon_06,friendship_nyamon_07,friendship_nyamon_08,friendship_nyamon_09,friendship_nyamon_10,friendship_nyamon_11,friendship_nyamon_12,friendship_nyamon_13,friendship_nyamon_14,friendship_nyamon_15,friendship_nyamon_16",
 			"type":"sheet",
-			"url":"ui/skin/createrole/CreateRole.json"
+			"url":"ui/skin/createrole/createrole.json"
 		},
 		{
-			"name":"Subtitles",
+			"name":"subtitles",
 			"subkeys":"btn_game_start,nekogami",
 			"type":"sheet",
-			"url":"ui/skin/subtitles/Subtitles.json"
+			"url":"ui/skin/subtitles/subtitles.json"
 		},
 		{
 			"name":"top",
@@ -101,6 +105,12 @@
 			"subkeys":"common_background_01,tab_common_01_01_a,tab_common_01_01_b,tab_common_01_02_a,tab_common_01_02_b,tab_common_01_03_a,tab_common_01_03_b,tab_common_01_04_a,tab_common_01_04_b",
 			"type":"sheet",
 			"url":"ui/skin/hero/hero.json"
+		},
+		{
+			"name":"map",
+			"subkeys":"map_action_window",
+			"type":"sheet",
+			"url":"ui/skin/map/map.json"
 		}
 	]
 }

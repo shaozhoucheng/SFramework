@@ -6,10 +6,10 @@
 	<sui:SButton id="btn_start" label="" x="279" y="576">
 		<sui:skinName>
 			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="Subtitles.btn_game_start"/>
+			<e:Image width="100%" height="100%" source="subtitles.btn_game_start"/>
 			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
 			</e:Skin>
 		</sui:skinName>
 	</sui:SButton>
-	<e:Image id="animImage" source="Subtitles.nekogami" x="760" y="422"/>
+	<e:Image id="animImage" source="subtitles.nekogami" x="760" y="422"/>
 </e:Skin>

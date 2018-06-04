@@ -83,6 +83,15 @@ module shao.game {
          * @memberOf ResPrefixConstructor
          */
         Building: string;
+
+        
+        /**
+         * 地图块
+         * 
+         * @type {string}
+         * @memberOf ResPrefixConstructor
+         */
+        MapBlock: string;
     }
 
 }

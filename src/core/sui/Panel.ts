@@ -128,7 +128,7 @@ module shao.sui {
             //目前没搞清egret component 加载这块 直接ready
             if (!this.loadThm) {
                 this.loadThm = true
-                let theme = new eui.Theme(this._thmName, this.stage);
+                let theme = new eui.Theme(ConfigUtils.getSkinThmFile(this._thmName), this.stage);
                 theme.addEventListener(eui.UIEvent.COMPLETE, this.thmDataComplete, this);
             }
             // this.skinDataComplete();

@@ -35,7 +35,7 @@ module shao {
             if (!res) {
                 res = new TextureResource();
                 res.resID = resID;
-                res.url = ConfigUtils.getResUrl(resID,true);
+                res.url = ConfigUtils.getResUrl(resID);
                 resources[resID] = res;
             }
             return res;

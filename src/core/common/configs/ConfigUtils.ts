@@ -10,7 +10,8 @@ module shao {
         prefixes: string[],
         paths: {
             res: Path,
-            skin: Path
+            skin: Path,
+            thm: Path
         };
     }
 
@@ -53,6 +54,10 @@ module shao {
          * @returns {string}
          */
         public static getResUrl(uri: string, sameDomain?: boolean): string {
+            // if(DEBUG)
+            // {
+            //     return "resource/remote/" + uri;
+            // }
             if (sameDomain) {
                 return "resource/remote/" + uri;
             }
@@ -82,18 +87,21 @@ module shao {
          */
         private static getUrlWithPath(uri: string, path: Path) {
             uri = path.path + uri;
-            var prefix = path.iPrefix ? "" : this.getPrefix(uri);
-            return prefix + uri;
+            if (DEBUG) {
+                return "resource" + uri;
+            } else {
+                var prefix = path.iPrefix ? "" : this.getPrefix(uri);
+                return prefix + uri;
+            }
         }
 
         /**
          * 通过配置中预加载资源map
          */
-        private static _preloadRes:{[uri: string]: string} = {};
+        private static _preloadRes: { [uri: string]: string } = {};
 
-        public static setPreloadRes(uri: string, name: string)
-        {
-             this._preloadRes[uri] = name;
+        public static setPreloadRes(uri: string, name: string) {
+            this._preloadRes[uri] = name;
             // if (uri.indexOf("skin") != -1)
             // {
             //     let index = uri.indexOf("../");
@@ -104,12 +112,11 @@ module shao {
             //     } else {
             //         uri = uri.slice(index);
             //     }
-               
+
             // }
         }
 
-        public static getPreloadSkinResData(uri: string): any
-        {
+        public static getPreloadSkinResData(uri: string): any {
             let name = this._preloadRes[uri];
             if (name) return RES.getRes(name);
             // let index = uri.indexOf("skin");
@@ -145,6 +152,13 @@ module shao {
          */
         public static getSkinFile(key: string, fileName: string) {
             return this.getUrlWithPath(key + "/" + fileName, this._data.paths.skin);
+        }
+
+        /**
+         * 获取皮肤主题文件地址
+         */
+        public static getSkinThmFile(fileName: string) {
+            return this.getUrlWithPath(fileName, this._data.paths.thm);
         }
 
     }

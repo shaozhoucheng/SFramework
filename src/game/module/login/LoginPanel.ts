@@ -7,8 +7,8 @@ module shao.game {
         protected init() {
             this.skinName = "resource/ui/panel/login/LoginPanel.exml";
             // this.skinName = "LoginPanel";
-            this._key = "Login"
-            this._thmName = "resource/ui/skin/login/login_thm.json"
+            this._key = "login"
+            this._thmName = "login/login_thm.json"
         }
 
         public tab_regist: eui.ToggleButton;

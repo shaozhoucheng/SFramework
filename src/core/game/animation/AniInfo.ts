@@ -50,9 +50,9 @@ module shao.game {
             //     console.log(`加载：${this.key}`);
             // }
             let uri = ResPrefix.ANI + this.key + "/" + "d.json"//+ UnitResource.DATA_JSON;
-            this.jsonurl = ConfigUtils.getResUrl(uri, true);
+            this.jsonurl = ConfigUtils.getResUrl(uri);
             uri = ResPrefix.ANI + this.key + "/" + "d.png"
-            this.pngurl = ConfigUtils.getResUrl(uri, true);
+            this.pngurl = ConfigUtils.getResUrl(uri);
             RES.getResByUrl(this.jsonurl, this.dataLoadComplete, this, RES.ResourceItem.TYPE_JSON);
             RES.getResByUrl(this.pngurl, this.dataLoadComplete, this, RES.ResourceItem.TYPE_IMAGE);
             this.state = RequestState.REQUESTING;

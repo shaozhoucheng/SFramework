@@ -68,5 +68,6 @@ module shao.game {
         Card: "o/card/",
         PanelBg: "o/panelbg/",
         Building: "o/building/",
+        MapBlock: "o/mapblock/",
     };
 }

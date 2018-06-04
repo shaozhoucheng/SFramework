@@ -39,17 +39,25 @@ module shao.game {
             view.group_hero.visible = !view.group_hero.visible
         }
 
+        private onMapBtnTouch() {
+            let view = this.$view;
+            this.hideGroup();
+            $facade.toggle(ModuleId.Map);
+        }
+
         public awake() {
             let view = this.$view;
             this.hideGroup();
             view.btn_rank.bindTouch(this.onRankBtnTouch, this);
             view.btn_hero.bindTouch(this.onHeroBtnTouch, this);
+            view.btn_map.bindTouch(this.onMapBtnTouch, this);
         }
 
         public sleep() {
             let view = this.$view;
             view.btn_rank.looseTouch(this.onRankBtnTouch, this);
             view.btn_hero.looseTouch(this.onHeroBtnTouch, this);
+            view.btn_map.looseTouch(this.onMapBtnTouch, this);
         }
     }
 }
