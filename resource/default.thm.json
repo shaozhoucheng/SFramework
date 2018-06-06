@@ -2,7 +2,24 @@
 	"skin": [],
 	"autoGenerateExmlsList": false,
 	"exmls": [
-		"resource/ui/panel/gameui/HPProgressBar.exml"
+		"resource/ui/panel/build/build.exml",
+		"resource/ui/panel/builddetail/builddetail.exml",
+		"resource/ui/panel/confirmagree/confirmagree.exml",
+		"resource/ui/panel/createrole/createrole.exml",
+		"resource/ui/panel/friend/friend.exml",
+		"resource/ui/panel/gameui/HPProgressBar.exml",
+		"resource/ui/panel/gameui/HP2ProgressBar.exml",
+		"resource/ui/panel/hero/hero.exml",
+		"resource/ui/panel/hero/heroheadrender.exml",
+		"resource/ui/panel/home/home.exml",
+		"resource/ui/panel/login/login.exml",
+		"resource/ui/panel/map/map.exml",
+		"resource/ui/panel/notice/notice.exml",
+		"resource/ui/panel/serverselect/serveritemrender.exml",
+		"resource/ui/panel/serverselect/serverselect.exml",
+		"resource/ui/panel/story/story.exml",
+		"resource/ui/panel/subtitles/subtitles.exml",
+		"resource/ui/panel/top/top.exml"
 	],
 	"path": "resource/default.thm.json"
 }

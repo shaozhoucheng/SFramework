@@ -5,10 +5,9 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/top/TopPanel.exml";
-            // this.skinName = "LoginPanel";
-            this._key = "Top"
-            this._thmName = "resource/ui/skin/top/top_thm.json"
+            this.skinName = "resource/ui/panel/top/top.exml";
+            this._key = "top"
+            // this._thmName = "top/top_thm.json"
         }
         public btn_home: sui.SButton;
         public btn_map: sui.SButton;

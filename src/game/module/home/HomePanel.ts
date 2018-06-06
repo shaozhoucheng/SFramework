@@ -5,10 +5,8 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/home/HomePanel.exml";
-            // this.skinName = "LoginPanel";
-            // this._key = "Home"
-            this._thmName = "resource/ui/skin/home/home_thm.json"
+            this.skinName = "resource/ui/panel/home/home.exml";
+            // this._thmName = "home/home_thm.json"
         }
 
         public rect0:eui.Rect;

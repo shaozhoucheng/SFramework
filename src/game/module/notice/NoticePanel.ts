@@ -7,9 +7,9 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/notice/NoticePanel.exml";
+            this.skinName = "resource/ui/panel/notice/notice.exml";
             // this._key = "Notice"
-            this._thmName = "resource/ui/skin/notice/notice_thm.json"
+            // this._thmName = "notice/notice_thm.json"
         }
     }
 }

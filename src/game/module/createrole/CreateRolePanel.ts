@@ -5,10 +5,10 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/createrole/CreateRolePanel.exml";
+            this.skinName = "resource/ui/panel/createrole/createrole.exml";
             // this.skinName = "LoginPanel";
-            this._key = "CreateRole"
-            this._thmName = "resource/ui/skin/createrole/createrole_thm.json"
+            this._key = "createrole"
+            // this._thmName = "createrole/createrole_thm.json"
         }
         public btn_goto:sui.SButton;
     }

@@ -80,7 +80,8 @@ module shao.game {
             if (DEBUG) {
                 RES.loadConfig("resource/default.res.json", "resource/");
             } else {
-                // RES.loadConfig(Core.domain + "/resource/default.res.json" + "?v=" + Math.random(), Core.domain + "/resource/", RES.ResourceItem.TYPE_JSON);
+                // RES.loadConfig(Core.domain + "/resource/default.res.json" + "?v=" + Math.random(), Core.domain + "/resource/", RES.ResourceItem.TYPE_JSON);              
+                RES.loadConfig("default.res.json", "http://www.zhouluhao.com:8080/game/");
             }
         }
 
@@ -108,12 +109,21 @@ module shao.game {
             RES.removeEventListener(RES.ResourceEvent.ITEM_LOAD_ERROR, this.onItemLoadError, this);
             RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
             RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onUIResComplete, this);
-            RES.loadConfig("resource/resource_ui.json", "resource/");
+            if (DEBUG) {
+                RES.loadConfig("resource/resource_ui.json", "resource/");
+            } else {
+                RES.loadConfig("resource_ui.json", "http://www.zhouluhao.com:8080/game/");
+            }
         }
 
         private onUIResComplete() {
             RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onUIResComplete, this);
-            let theme = new eui.Theme("resource/default.thm.json", Core.stage);
+            let theme;
+            if (DEBUG) {
+                theme = new eui.Theme("resource/default.thm.json", Core.stage);
+            } else {
+                theme = new eui.Theme("http://www.zhouluhao.com:8080/game/default.thm.json", Core.stage);
+            }
             theme.addEventListener(eui.UIEvent.COMPLETE, () => {
                 this.onResourceLoadComplete();
             }, this);

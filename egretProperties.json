@@ -2,6 +2,9 @@
   "engineVersion": "5.1.8",
   "compilerVersion": "5.1.8",
   "template": {},
+  "eui": {
+    "exmlPublishPolicy": "commonjs"
+  },
   "target": {
     "current": "web"
   },

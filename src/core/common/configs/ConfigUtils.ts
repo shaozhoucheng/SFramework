@@ -10,8 +10,7 @@ module shao {
         prefixes: string[],
         paths: {
             res: Path,
-            skin: Path,
-            thm: Path
+            skin: Path
         };
     }
 
@@ -59,7 +58,7 @@ module shao {
             //     return "resource/remote/" + uri;
             // }
             if (sameDomain) {
-                return "resource/remote/" + uri;
+                return "resource/" + uri;
             }
             var hash = this._hash;
             if (hash) {
@@ -154,12 +153,20 @@ module shao {
             return this.getUrlWithPath(key + "/" + fileName, this._data.paths.skin);
         }
 
-        /**
-         * 获取皮肤主题文件地址
-         */
-        public static getSkinThmFile(fileName: string) {
-            return this.getUrlWithPath(fileName, this._data.paths.thm);
-        }
+        // /**
+        //  * 获取皮肤主题文件地址
+        //  */
+        // public static getSkinThmFile(fileName: string) {
+        //     return this.getUrlWithPath(fileName, this._data.paths.thm);
+        // }
+
+        // /**
+        //  * 获取皮肤Exml文件地址
+        //  */
+        // public static getSkinExmlFile(fileName: string) {
+        //     return this.getUrlWithPath(fileName, this._data.paths.exml);
+        // }
+
 
     }
 

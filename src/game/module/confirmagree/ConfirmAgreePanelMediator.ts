@@ -25,7 +25,7 @@ module shao.game {
 
 		private showConfirm()
 		{
-			RES.getResByUrl("resource/remote/data/confirm.json",this.onConfirmComplete,this,RES.ResourceItem.TYPE_JSON);
+			RES.getResByUrl("http://www.zhouluhao.com:8080/game/data/confirm.json",this.onConfirmComplete,this,RES.ResourceItem.TYPE_JSON);
 		}
 
 		private onConfirmComplete(data:any,key:string)

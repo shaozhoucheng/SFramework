@@ -5,10 +5,10 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/login/LoginPanel.exml";
-            // this.skinName = "LoginPanel";
+            this.skinName = "resource/ui/panel/login/login.exml";
+            // this.skinName = "resource/ui/panel/login/login.exml";
             this._key = "login"
-            this._thmName = "login/login_thm.json"
+            // this._thmName = "login/login.thm.json"
         }
 
         public tab_regist: eui.ToggleButton;

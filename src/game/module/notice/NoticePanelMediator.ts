@@ -12,10 +12,13 @@ module shao.game {
             //这里加事件关注
         }
 
+        private noticeBg:sui.Image;
+
         protected afterAllReady() {
             let view = this.$view;
-            view.bg.source = "resource/remote/i/start.jpg";
-            // RES.getResByUrl("resource/remote/i/start.jpg", null, null, RES.ResourceItem.TYPE_IMAGE);
+            let bg = this.noticeBg = new sui.Image;
+            view.addChildAt(bg,0);
+            bg.source = game.ResPrefix.I+"start.jpg";
         }
 
         private ani: AniRender

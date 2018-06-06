@@ -5,10 +5,10 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/friend/FriendPanel.exml";
+            this.skinName = "resource/ui/panel/friend/friend.exml";
             // this.skinName = "LoginPanel";
-            this._key = "Friend"
-            this._thmName = "resource/ui/skin/friend/friend_thm.json"
+            this._key = "friend"
+            // this._thmName = "friend/friend_thm.json"
         }
 
         public tg_friend: eui.ToggleSwitch;

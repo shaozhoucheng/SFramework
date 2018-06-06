@@ -5,10 +5,9 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/hero/HeroPanel.exml";
-            // this.skinName = "LoginPanel";
-            this._key = "Hero"
-            this._thmName = "resource/ui/skin/hero/hero_thm.json"
+            this.skinName = "resource/ui/panel/hero/hero.exml";
+            this._key = "hero"
+            // this._thmName = "hero/hero_thm.json"
         }
 
         public tab_0: eui.ToggleButton;

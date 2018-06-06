@@ -7,9 +7,9 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/serverselect/ServerSelectPanel.exml";
-            this._key = "ServerSelect"
-            this._thmName = "resource/ui/skin/serverselect/serverselect_thm.json"
+            this.skinName = "resource/ui/panel/serverselect/serverselect.exml";
+            this._key = "serverselect"
+            // this._thmName = "serverselect/serverselect_thm.json"
         }
     }
 }

@@ -21,8 +21,8 @@ module shao.game {
         public onExit(): void {
             super.onExit();
             $facade.toggle(ModuleId.Notice,0)
-            RES.destroyRes("Login")
-            RES.destroyRes("ServerSelect")
+            RES.destroyRes("login")
+            RES.destroyRes("serverselect")
         }
     }
 }

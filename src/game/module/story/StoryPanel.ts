@@ -5,9 +5,9 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/story/StoryPanel.exml";
+            this.skinName = "resource/ui/panel/story/story.exml";
             // this._key = "Login"
-            this._thmName = "resource/ui/skin/story/story_thm.json"
+            // this._thmName = "story/story_thm.json"
         }
 
         public txt_talk:eui.Label;

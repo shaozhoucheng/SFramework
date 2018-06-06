@@ -1,6 +1,0 @@
-{
-	"exmls": [
-    "resource/ui/panel/serverselect/ServerItemRender.exml",
-    "resource/ui/panel/serverselect/ServerSelectPanel.exml"
-	]
-}

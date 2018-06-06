@@ -6,43 +6,43 @@
 		},
 		{
 			"keys":"serverselect",
-			"name":"ServerSelect"
+			"name":"serverselect"
 		},
 		{
 			"keys":"confirmagree",
-			"name":"ConfirmAgree"
+			"name":"confirmagree"
 		},
 		{
 			"keys":"createrole",
-			"name":"CreateRole"
+			"name":"createrole"
 		},
 		{
 			"keys":"subtitles",
-			"name":"Subtitles"
+			"name":"subtitles"
 		},
 		{
 			"keys":"top",
-			"name":"Top"
+			"name":"top"
 		},
 		{
 			"keys":"build",
-			"name":"Build"
+			"name":"build"
 		},
 		{
 			"keys":"builddetail",
-			"name":"BuildDetail"
+			"name":"builddetail"
 		},
 		{
 			"keys":"friend",
-			"name":"Friend"
+			"name":"friend"
 		},
 		{
 			"keys":"hero",
-			"name":"Hero"
+			"name":"hero"
 		},
 		{
 			"keys":"map",
-			"name":"Map"
+			"name":"map"
 		}
 	],
 	"resources":[

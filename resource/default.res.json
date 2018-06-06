@@ -1,90 +1,75 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,cfgs,common,main_map_upperparts,band,friendship_map_base,card_num_param_fnt,card_num_param_png,win_common_00_png,game",
+			"keys": "cfgs,main_map_upperparts,band,friendship_map_base,game,common",
 			"name": "preload"
 		}
 	],
 	"resources": [
 		{
-			"url": "assets/bg.jpg",
-			"type": "image",
-			"name": "bg_jpg"
-		},
-		{
-			"url": "assets/egret_icon.png",
-			"type": "image",
-			"name": "egret_icon_png"
-		},
-		{
-			"url": "config/description.json",
-			"type": "json",
-			"name": "description_json"
-		},
-		{
-			"url": "remote/data/cfgs.json",
+			"url": "data/cfgs.json",
 			"type": "json",
 			"name": "cfgs"
 		},
 		{
-			"url": "ui/skin/Common/common.json",
+			"url": "ui/skin/common/common.json",
 			"type": "sheet",
 			"name": "common",
 			"subkeys": "btl_hp_bar,btl_hp_base,btn_close2,btn_nextpage,btn_no,btn_quicksend,btn_yes,card_bar_hp,close_icon,common_background_00"
 		},
 		{
-			"url": "remote/i/tmp/main_map_upperparts.png",
+			"url": "i/tmp/main_map_upperparts.png",
 			"type": "image",
 			"name": "main_map_upperparts"
 		},
 		{
-			"url": "remote/i/tmp/band.png",
+			"url": "i/tmp/band.png",
 			"type": "image",
 			"name": "band"
 		},
 		{
-			"url": "remote/i/tmp/friendship_map_base.png",
+			"url": "i/tmp/friendship_map_base.png",
 			"type": "image",
 			"name": "friendship_map_base"
 		},
 		{
-			"url": "ui/skin/Common/card_num_param.fnt",
+			"url": "ui/skin/common/card_num_param.fnt",
 			"type": "font",
 			"name": "card_num_param_fnt"
 		},
 		{
-			"url": "ui/skin/Common/card_num_param.png",
+			"url": "ui/skin/common/card_num_param.png",
 			"type": "image",
 			"name": "card_num_param_png"
 		},
 		{
-			"url": "remote/i/tmp/card_reverse_01.jpg",
+			"url": "i/tmp/card_reverse_01.jpg",
 			"type": "image",
 			"name": "card_reverse_01_jpg"
 		},
 		{
-			"url": "remote/o/panelbg/main_map_lowerparts.png",
+			"url": "o/panelbg/main_map_lowerparts.png",
 			"type": "image",
 			"name": "main_map_lowerparts_png"
 		},
 		{
-			"url": "remote/o/building/institution_000.png",
+			"url": "o/building/institution_000.png",
 			"type": "image",
 			"name": "institution_000_png"
 		},
 		{
-			"url": "remote/o/building/institution_001.png",
+			"url": "o/building/institution_001.png",
 			"type": "image",
 			"name": "institution_001_png"
 		},
 		{
-			"url": "ui/skin/Common/win_common_00.png",
+			"url": "ui/skin/common/win_common_00.png",
 			"type": "image",
 			"name": "win_common_00_png",
 			"scale9grid": "6,28,52,31"
 		},
 		{
-			"url": "remote/data/game.json",
+			"url": "data/game.json",
 			"type": "json",
 			"name": "game"
 		}

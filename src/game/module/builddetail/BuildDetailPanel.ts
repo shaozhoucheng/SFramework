@@ -5,10 +5,9 @@ module shao.game {
         }
 
         protected init() {
-            this.skinName = "resource/ui/panel/builddetail/BuildDetailPanel.exml";
-            // this.skinName = "LoginPanel";
-            this._key = "BuildDetail"
-            this._thmName = "resource/ui/skin/builddetail/builddetail_thm.json"
+            this.skinName = "resource/ui/panel/builddetail/builddetail.exml";
+            this._key = "builddetail"
+            // this._thmName = "builddetail/builddetail_thm.json"
         }
 
         public group_btns: eui.Group;

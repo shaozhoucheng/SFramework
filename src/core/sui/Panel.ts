@@ -126,15 +126,22 @@ module shao.sui {
 
         public startSync() {
             //目前没搞清egret component 加载这块 直接ready
-            if (!this.loadThm) {
-                this.loadThm = true
-                let theme = new eui.Theme(ConfigUtils.getSkinThmFile(this._thmName), this.stage);
-                theme.addEventListener(eui.UIEvent.COMPLETE, this.thmDataComplete, this);
-            }
+            // if (!this.loadThm) {
+            //     this.loadThm = true
+            //     if (this._thmName) {
+            //         console.log("load load thm.json "+this._thmName)
+            //         let theme = new eui.Theme(ConfigUtils.getSkinThmFile(this._thmName), this.stage);
+            //         theme.addEventListener(eui.UIEvent.COMPLETE, this.thmDataComplete, this);
+            //     }else{
+            //         this.thmDataComplete()
+            //     }
+            // }
+            this.thmDataComplete();
             // this.skinDataComplete();
         }
 
         private thmDataComplete(e?: any) {
+            console.log("complete load thm.json")
             if (!this._key) {
                 this.loadSkin = true
                 this.skinDataComplete();

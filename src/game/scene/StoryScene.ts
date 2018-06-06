@@ -21,10 +21,10 @@ module shao.game {
         public onExit(): void {
             super.onExit();
             $facade.toggle(ModuleId.Story, 0);
-            RES.destroyRes("Story")
-            RES.destroyRes("Subtitles")
-            RES.destroyRes("CreateRole")
-            RES.destroyRes("ConfirmAgree")
+            RES.destroyRes("story")
+            RES.destroyRes("subtitles")
+            RES.destroyRes("createrole")
+            RES.destroyRes("confirmagree")
         }
     }
 }
