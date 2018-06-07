@@ -46,6 +46,7 @@ module shao.game {
 		}
 
 		public awake() {
+			console.log("open map")
 			let view = this.$view;
 			this._background.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onMapBegin, this);
 			this._background.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMapMove, this);
@@ -55,6 +56,8 @@ module shao.game {
 
 		public sleep() {
 			let view = this.$view;
+			this._background.removeEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onMapBegin, this);
+			this._background.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMapMove, this);
 		}
 	}
 }

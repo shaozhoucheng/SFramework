@@ -11,21 +11,21 @@
 	"game": [
 		"bin-debug/core/mvc/core/FHost.js",
 		"bin-debug/core/panel/TStatePanel.js",
-		"bin-debug/core/mvc/core/Proxy.js",
+		"bin-debug/core/common/RecyclablePool.js",
 		"bin-debug/core/common/utils/MapDict.js",
-		"bin-debug/Game.js",
 		"bin-debug/core/mvc/module/IModuleCfg.js",
 		"bin-debug/core/game/GameConfig.js",
 		"bin-debug/core/tween/Tween.js",
 		"bin-debug/core/mvc/core/Mediator.js",
-		"bin-debug/core/sui/components/OrientationContainer.js",
-		"bin-debug/core/common/RecyclablePool.js",
+		"bin-debug/core/mvc/core/Proxy.js",
+		"bin-debug/Game.js",
 		"bin-debug/core/mvc/module/BaseMCfg.js",
 		"bin-debug/core/mvc/module/handlers/ModuleHandler.js",
 		"bin-debug/core/common/net/NetService.js",
 		"bin-debug/core/scene/BaseScene.js",
 		"bin-debug/core/sui/Panel.js",
 		"bin-debug/core/sui/components/ListItemRender.js",
+		"bin-debug/core/sui/components/OrientationContainer.js",
 		"bin-debug/core/common/net/AuthState.js",
 		"bin-debug/core/sui/components/TabGroup.js",
 		"bin-debug/core/common/net/NetEvent.js",
@@ -91,7 +91,7 @@
 		"bin-debug/core/sui/components/PButton.js",
 		"bin-debug/core/sui/components/SButton.js",
 		"bin-debug/core/sui/components/Scroller.js",
-		"bin-debug/core/common/Extend.js",
+		"bin-debug/game/scene/StoryScene.js",
 		"bin-debug/core/sui/components/TalkLabel.js",
 		"bin-debug/core/sui/components/VBox.js",
 		"bin-debug/core/sui/core/SuiEvent.js",
@@ -172,6 +172,6 @@
 		"bin-debug/game/scene/HomeScene.js",
 		"bin-debug/game/scene/LoginScene.js",
 		"bin-debug/game/scene/SceneConst.js",
-		"bin-debug/game/scene/StoryScene.js"
+		"bin-debug/core/common/Extend.js"
 	]
 }
