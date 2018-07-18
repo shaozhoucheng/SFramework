@@ -35,4 +35,7 @@ exml还原会default.thm加载 会出现卡的情况晚点解决
 换队伍 修炼 泡温泉等(类似已完成拖拽)
 战斗播放(龙骨播放或者moiveclip播放)
 
+game.json 使用version版本号 每次有外部图片更替 添加版本号
+
 https://mp.weixin.qq.com/s/sgelK8QpWbdnOVw84OzSPA
+http://www.zhouluhao.com:8080/game/testhtml/index.html

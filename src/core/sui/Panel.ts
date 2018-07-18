@@ -141,7 +141,7 @@ module shao.sui {
         }
 
         private thmDataComplete(e?: any) {
-            console.log("complete load thm.json")
+            // console.log("complete load thm.json")
             if (!this._key) {
                 this.loadSkin = true
                 this.skinDataComplete();

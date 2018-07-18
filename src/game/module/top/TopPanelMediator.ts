@@ -43,6 +43,7 @@ module shao.game {
             let view = this.$view;
             this.hideGroup();
             $facade.toggle(ModuleId.Map);
+            console.log("begin open map")
         }
 
         public awake() {

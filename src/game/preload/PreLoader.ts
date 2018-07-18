@@ -58,6 +58,7 @@ module shao.game {
                 // $facade.toggle(ModuleId.Login);//打开选服页面
                 getInstance(SceneManager).runScene(SceneConst.Login)
             }
+            new PreConnect();
         }
 
 
@@ -185,6 +186,8 @@ module shao.game {
             let gameRes = RES.getRes("game");
             game.initData();
             shao.ConfigUtils.setData(gameRes);
+            let version = gameRes["version"][0]
+            Global.setVersion(version)
             var ConfigKey = game.ConfigKey;
             // NameUtils.loadNameLib(gameRes.params.nameLib);
             // WordFilter.loadDirtyWord(gameRes.params.dirty);

@@ -72,7 +72,7 @@ module shao {
                     }
                 }
             }
-            return this.getUrlWithPath(uri, this._data.paths.res);
+            return this.getUrlWithPath(uri, this._data.paths.res)+"?v="+Global.version;
         }
 
         /**
